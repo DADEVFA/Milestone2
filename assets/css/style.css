@@ -1,11 +1,10 @@
-
 /*-------------------------------Gradient Jumbotron*/
 
 .container-gradient-bg {
   width: 100%;
   height: 80vh;
   color: #fff;
-  background: linear-gradient(-55deg,#963caa, #ee7753, #963caa, #ef5466 );
+  background: linear-gradient(-55deg, #963caa, #ee7753, #963caa, #ef5466);
   background-size: 500%, 400%;
   position: relative;
   animation: change 35s ease-in-out infinite;
@@ -24,5 +23,18 @@
 }
 
 
+.callout-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-
+.gradient-logo img {
+  width: 100%;
+  height: auto;
+  padding: 25px;
+}
