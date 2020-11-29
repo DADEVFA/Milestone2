@@ -3,6 +3,36 @@ body {
 }
 
 
+/*-------------------------------Navigation*/
+.navigation {
+    width: 100%;
+    position: relative;
+}
+.navbar {
+  background-color: transparent;
+  vertical-align: middle;
+  z-index: 900;
+  height: 80px;
+  padding: 5px 30px 5px 30px;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+#navigationDrop {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: transparent;
+  border-color: transparent;
+  text-align: right;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding-right: 30px;
+}
 /*-------------------------------Gradient Jumbotron*/
 
 .container-gradient-bg {
@@ -40,7 +70,7 @@ body {
   width: 100%;
   height: auto;
   padding: 25px;
-  margin: 50px 0 80px 0;
+  margin: 0 0 80px 0;
 }
 
 .jumbo-button {  
@@ -55,3 +85,4 @@ body {
     color: white;
     text-decoration: none;
 }
+
