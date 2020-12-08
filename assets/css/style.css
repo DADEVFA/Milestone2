@@ -1,5 +1,6 @@
 body {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
+    color: #D81B60;
 }
 
 
@@ -77,8 +78,8 @@ body {
  letter-spacing: 1.9px;
   border: 0.1px solid rgb(255, 255, 255, 0.4);
   color: white;
-  padding: 8px 22px;
-  font-size: 12px;
+  padding: 8px 25px;
+  font-size: 14px;
 }
 
 .jumbo-button:hover {
@@ -90,17 +91,17 @@ body {
 /*-------------------------------Latest Releases*/
 
 .index-songsection {
-    text-align: center;
+  text-align: center;
   justify-content: center;
 }
 
 .center-row {
-    justify-content: center;
+  justify-content: center;
 }
 .index-songs-header {
-    color: rgb(216, 27, 96);
-    margin: 70px 0 40px 0;
-    font-weight:400;
+  color: rgb(216, 27, 96);
+  margin: 70px 0 40px 0;
+  font-weight:400;
 }
 
 .albumcover img {
@@ -109,19 +110,76 @@ body {
   max-width: 600px;
   margin: 30px 30px 60px 30px;
   box-shadow: 5px 5px 9px #310009; 
+}
+/*---------------------------------- Submit Email*/
 
+.email-submit-zone {
+  align-items: center;
+  justify-content: center;
+}
+
+.inline {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.email-submit-box {
+  margin: 40px 80px;
+  color: #D81B60;
+  border: 0.1px solid rgb(216, 27, 96, 0.22);
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  box-shadow: 3px 5px 5px rgb(49, 0, 9, 0.24);
+}
+
+.email-input {
+  color: #D81B60;
+  border-width: 0 0 1px 0;
+}
+
+.sign-up-btn{
+  background: transparent;
+  letter-spacing: 1px;
+  border: 0.1px solid rgb(216, 27, 96, 0.2);
+  color: #D81B60;
+  padding: 8px 30px;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 18px 0 23px;
+}
+.terms-button {
+  margin-top: 10px;
+  letter-spacing: 1px;
+  color: #D81B60;
+  padding: 8px 0;
+  font-size: 14px;
+  border: none;
+  background: transparent;
+}
+
+.collapse {
+  font-size: 12px;
+  font-weight: 300px;
+  color: gray;
 }
 
 
 
-
 /*---------------------------------- Screensize*/
-
 
 /*------------------------------ Phone*/
 
 @media (min-width: 320px) {
   .albumcover img {
     margin: 30px 0 60px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .email-submit-box {
+  margin: 20px;
   }
 }

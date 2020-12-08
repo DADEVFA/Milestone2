@@ -24,6 +24,9 @@
         rel="icon" 
         href="favicon.ico" 
         type="image/x-icon"/>
+    <script 
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
 <!-- Facebook Pixel Code -->
 
 <!-- End Facebook Pixel Code -->
@@ -70,7 +73,6 @@
                 </ul>
             </div>
         </nav>
-
 <!-- /.Navigation -->
 
         <div class="callout-container">
@@ -84,9 +86,11 @@
             </div>
         </div>
     </div>
+<!-- /.Gradient Jumbo-->
 
+<!-- Latet Releases-->
     <div class="container-wrapper container index-songsection">
-        <h4 class="index-songs-header">Latest Relases</h4>
+        <h2 class="index-songs-header">Latest Relases</h2>
             <div class="row center-row">
                 <a href="free">
                     <div class="albumcover">
@@ -104,8 +108,56 @@
                 </a>
             </div>
     </div>
+<!-- /.Latest Releases-->
 
-<!-- /.Gradient Jumbo-->
+<!-- SubmitEmail-->
+    <div class="container-wrapper email-submit-zone">
+        <div class="email-submit-box">
+            <p>
+            Get to know METTA better!<br>
+            Sign up, and receive letters about new releases and much more.</p>
+
+                <form 
+                    class="inline" 
+                    onsubmit="return false">
+                            <input
+                                type="email"
+                                class="form-control email-input"
+                                id="submit-email"
+                                name="submit-email"
+                                placeholder="Your Email"
+                            />
+                    <button type="submit" class="sign-up-btn">
+                    Submit
+                    </button>
+                </form>
+    <div class="term-box">
+            <button type="button" class="terms-button" data-toggle="collapse" data-target="#terms">
+                Terms
+            </button>
+        <div id="terms" class="collapse">
+            By submitting your emailaddress you make it possible for METTA to send you information regarding music, 
+            upcoming events and other related things. You can unsubscribe at all times. 
+        </div>
+    </div>
+
+    <script>
+    $(document).ready(function(){
+
+            $("#terms").on("hide.bs.collapse", function(){
+            $(".terms-button").html('Terms');
+        });
+            $("#terms").on("show.bs.collapse", function(){
+            $(".terms-button").html('Close Terms');
+        });
+    });
+    </script>
+
+        </div>
+    </div>
+<!-- /.SubmitEmail-->
+
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
