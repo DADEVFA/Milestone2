@@ -104,11 +104,14 @@ body {
 }
 
 .albumcover img {
-    height: auto;
-    width: 100%;
-    max-width: 600px;
-    margin: 30px 30px 60px 30px;
+  height: auto;
+  width: 100%;
+  max-width: 600px;
+  margin: 30px 30px 60px 30px;
+  box-shadow: 5px 5px 9px #310009; 
+
 }
+
 
 
 
