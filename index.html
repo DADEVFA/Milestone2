@@ -114,8 +114,9 @@
     <div class="container-wrapper email-submit-zone">
         <div class="email-submit-box">
             <p>
-            Get to know METTA better!<br>
-            Sign up, and receive letters about new releases and much more.</p>
+                Get to know METTA better!<br>
+                Sign up, and receive letters about new releases and much more.
+            </p>
 
                 <form 
                     class="inline" 
@@ -127,37 +128,31 @@
                                 name="submit-email"
                                 placeholder="Your Email"
                             />
-                    <button type="submit" class="sign-up-btn">
-                    Submit
-                    </button>
+                <button 
+                    type="submit" 
+                    class="submit-button"
+                    onclick="myFunction()" 
+                    id="submit-button" 
+                    value="Submit">
+                    Submit 
+                </button>
                 </form>
-    <div class="term-box">
-            <button type="button" class="terms-button" data-toggle="collapse" data-target="#terms">
-                Terms
-            </button>
-        <div id="terms" class="collapse">
-            By submitting your emailaddress you make it possible for METTA to send you information regarding music, 
-            upcoming events and other related things. You can unsubscribe at all times. 
-        </div>
-    </div>
-
-    <script>
-    $(document).ready(function(){
-
-            $("#terms").on("hide.bs.collapse", function(){
-            $(".terms-button").html('Terms');
-        });
-            $("#terms").on("show.bs.collapse", function(){
-            $(".terms-button").html('Close Terms');
-        });
-    });
-    </script>
-
+            <div class="term-box">
+                <button type="button" class="terms-button" data-toggle="collapse" data-target="#terms">
+                    Terms
+                </button>
+                    <div id="terms" class="collapse">
+                        By submitting your emailaddress you make it possible for METTA to send you information regarding music, 
+                        upcoming events and other related things. You can unsubscribe at all times. 
+                    </div>
+            </div>
         </div>
     </div>
 <!-- /.SubmitEmail-->
 
-
+    <script 
+        src="/js/main.js"
+    ></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

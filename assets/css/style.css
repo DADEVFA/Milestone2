@@ -1,8 +1,6 @@
 body {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
-    color: #D81B60;
 }
-
 
 /*-------------------------------Navigation*/
 .navigation {
@@ -128,7 +126,7 @@ body {
 .email-submit-box {
   margin: 40px 80px;
   color: #D81B60;
-  border: 0.1px solid rgb(216, 27, 96, 0.22);
+  border: 0.1px solid rgb(216, 27, 96, 0.4 );
   padding: 20px;
   font-size: 20px;
   font-weight: 500;
@@ -140,16 +138,29 @@ body {
   border-width: 0 0 1px 0;
 }
 
-.sign-up-btn{
+.submit-button {
   background: transparent;
   letter-spacing: 1px;
-  border: 0.1px solid rgb(216, 27, 96, 0.2);
+  border: 0.1px solid rgb(216, 27, 96, 0.4 );
   color: #D81B60;
   padding: 8px 30px;
   font-size: 12px;
   font-weight: 500;
   margin: 0 18px 0 23px;
 }
+
+.sent-button {
+  background: transparent;
+  letter-spacing: 1px;
+  border: 0.1px solid rgb(216, 27, 96, 0.4 );
+  color: #D81B60;
+  padding: 8px 37px;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 18px 0 23px;
+  box-shadow: 1px 1px 6px #D81B60; 
+}
+
 .terms-button {
   margin-top: 10px;
   letter-spacing: 1px;
