@@ -177,6 +177,72 @@ body {
   color: gray;
 }
 
+/*------------------------------- Footer*/
+
+.footer {
+background-color: rgb(134, 124,125, 0.21);
+width: 100%;
+height: 300px;
+justify-content: center;
+text-align: center;
+align-content: center;
+font-size: 14px;
+color: rgb(216, 27, 96);
+position: relative;
+}
+
+.footer-socials {
+  margin: 40px 3px 50px 3px;
+}
+
+.sociallinks-box a {
+    text-decoration: none;
+}
+
+.footer-buttons-box {
+  margin-top: 20px;
+  width: 100;
+}
+
+.footer-buttons-box a {
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+}
+
+.footer-buttons {
+  width: 100px;
+  background: transparent;
+  border: 0.1px solid rgba(192, 89, 127, 0.2);
+  color: #D81B60;
+  margin: 0 5px 0 5px;
+  padding: 0.8em 1em;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+  display: inline-block;
+  position: relative;
+  line-height: 1.15384615;
+}
+
+
+.footer-buttons:hover {
+text-decoration: none;
+color: black;
+border-color: black;
+}
+
+.copyright {
+position: absolute;
+text-align: center;
+bottom: 0;
+width: 100%;
+margin-bottom: 10px;
+}
+
 
 
 /*---------------------------------- Screensize*/
@@ -186,6 +252,31 @@ body {
 @media (min-width: 320px) {
   .albumcover img {
     margin: 30px 0 60px 0;
+  }
+  .footer-buttons-box a {
+    padding: 0;
+    text-align: center;
+    align-content: center;
+ }
+ .footer-buttons {
+  width: 100px;
+  background: transparent;
+  border: 0.1px solid rgba(192, 89, 127, 0.2);
+  color: #D81B60;
+  padding: 0.8em 1em;
+  margin: 0;
+ }
+}
+
+@media (min-width: 375px) {
+.footer-buttons {
+  margin: 0 5px 0 5px;
+ }
+}
+
+@media (min-width: 767px) {
+.footer-socials {
+  margin: 40px 10px 50px 10px;
   }
 }
 
