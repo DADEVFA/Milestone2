@@ -33,30 +33,36 @@ font-style: normal;
   padding: 5px 30px 5px 30px;
 }
 
-.navbar {
-  background-color: transparent;
-  vertical-align: middle;
-  z-index: 900;
-  height: 80px;
-  padding: 5px 30px 5px 30px;
-}
-
 .navbar-toggler{
     border: none;
 }
 
-#navigationDrop {
-  margin-top: 4px;
-  width: 15%;
+#navigationDrop-index {
+  width: 100%;
   position: absolute;
   top: 100%;
   right: 0;
   z-index: 1;
-  background-color: rgb(134, 124,125, 0.8);
+  background-color: transparent;
   text-align: right;
   font-size: 18px;
   letter-spacing: 1px;
-  padding-right: 30px;
+  padding-right: 25px;
+  box-shadow: 2px 4px 7px rgb(0, 0, 0, 0.5); 
+}
+
+#navigationDrop {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 1;
+  background-color: rgb(134, 124,125, 0.7);
+  text-align: right;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding-right: 25px;
+  box-shadow: 2px 4px 6px rgb(0, 0, 0, 0.3); 
 }
 
 /*-------------------------------Gradient Jumbotron*/
