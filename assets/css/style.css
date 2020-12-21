@@ -161,15 +161,14 @@ a:hover {
 }
 
 .song-panel-top {
-  height: 100px;
+  height: 60px;
   width: 100%;
   margin-top: 70px;
-  margin-bottom: 20px;
   vertical-align: middle;
 }
 
 .song-panel-top-left {
-  height: 80px;
+  height: 60px;
   width: 50%;
   float: left;
   text-align: left;
@@ -178,12 +177,12 @@ a:hover {
 .songs-header {
   color: rgb(216, 27, 96);
   font-weight:400;
-  font-size: 3vh;
+  font-size: 2.9vh;
   text-align: left;
 }
 
 .song-panel-top-right {
-  height: 80px;
+  height: 60px;
   width: 50%;
   float: right;
   text-align: right;
@@ -195,7 +194,7 @@ a:hover {
   border: 0.1px solid rgba(192, 89, 127, 0.2);
   color: #D81B60;
   padding: 0.8em 1em;
-  font-size: 1vh;
+  font-size: 1.1vh;
   letter-spacing: 0.1px;
   font-weight: 600;
   position: relative;
@@ -211,15 +210,20 @@ a:hover {
   border: 0.1px solid rgba(192, 89, 127, 0.2);
   color: #D81B60;
   padding: 0.8em 1em;
-  font-size: 1vh;
+  font-size: 1.1vh;
   letter-spacing: 0.1px;
   font-weight: 600;
   position: relative;
   line-height: 1.15384615;
   display: inline-block;
   position: relative;
-  margin-top: 40px;
+  margin: 20px 0 10px 0;
   text-align: center;
+}
+
+.music-services-top-area {
+  width: 70%;
+  text-align: left;
 }
 
 .streaming-services-box {
@@ -246,7 +250,7 @@ box-shadow: 2px 4px 6px rgb(0, 0, 0, 0.3);
 
 .back-to-all-music {
   text-align: right;
-  width: 50%;
+  width: 55%;
   float: right;
   margin-top: 20px;
 }
@@ -404,6 +408,7 @@ margin-bottom: 10px;
 
 /*------------------------------ Phone*/
 
+
 @media (min-width: 319px) {
  .albumcover img {
   margin: 30px 0 60px 0;
@@ -435,6 +440,12 @@ margin-bottom: 10px;
  }
 }
 
+@media (max-width: 375px) {
+.song-panel-top-right {
+  margin-top: -5px;
+ }
+}
+
 @media (min-width: 767px) {
 .footer-socials {
   margin: 40px 10px 50px 10px;
@@ -451,4 +462,10 @@ margin-bottom: 10px;
   .email-submit-box {
   margin: 20px;
   }
+}
+
+@media (min-height: 766px) {
+.songs-header {
+  font-size: 2.7vh;
+}
 }
