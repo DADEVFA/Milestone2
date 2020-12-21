@@ -151,9 +151,71 @@ font-style: normal;
   margin-bottom: 60px;
 }
 
-.song-top-panel {
+.song-panel-whole {
     width: 100%;
     max-width: 600px;
+}
+
+.song-panel-top {
+  height: 100px;
+  width: 100%;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  vertical-align: middle;
+}
+
+.song-panel-top-left {
+  height: 80px;
+  width: 50%;
+  float: left;
+  text-align: left;
+}
+
+.songs-header {
+  color: rgb(216, 27, 96);
+  font-weight:400;
+  font-size: 3vh;
+  text-align: left;
+}
+
+.song-panel-top-right {
+  height: 80px;
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+
+.song-buttons {
+  width: 40%;
+  background: transparent;
+  border: 0.1px solid rgba(192, 89, 127, 0.2);
+  color: #D81B60;
+  padding: 0.8em 1em;
+  font-size: 1vh;
+  letter-spacing: 0.1px;
+  font-weight: 600;
+  position: relative;
+  line-height: 1.15384615;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+.choose-music-service {
+  width: 60%;
+  background: transparent;
+  border: 0.1px solid rgba(192, 89, 127, 0.2);
+  color: #D81B60;
+  padding: 0.8em 1em;
+  font-size: 1vh;
+  letter-spacing: 0.1px;
+  font-weight: 600;
+  position: relative;
+  line-height: 1.15384615;
+  display: inline-block;
+  position: relative;
+  margin-top: 40px;
+  text-align: center;
 }
 
 .streaming-services-box {
@@ -162,6 +224,8 @@ font-style: normal;
     height: 250px;
     padding: 25px 40px;
     justify-content: center;
+    margin-top: 20px;
+    float: left;
 }
 
 .streaming-services-box img {
@@ -367,6 +431,9 @@ margin-bottom: 10px;
   }
   .streaming-services-apps {
     margin: 20px;
+ }
+ .song-panel-whole {
+    margin-left: 10px;
  }
 }
 
