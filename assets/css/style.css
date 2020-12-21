@@ -158,6 +158,7 @@ a:hover {
 .song-panel-whole {
     width: 100%;
     max-width: 600px;
+    transform-style: preserve-3d;
 }
 
 .song-panel-top {
@@ -259,12 +260,19 @@ box-shadow: 2px 4px 6px rgb(0, 0, 0, 0.3);
   max-width: 500px;
   margin-bottom: 10px;
   margin-top: 70px;
+  transform-style: preserve-3d;
 }
 
 .song-artwork img {
   height: auto;
   width: 100%;
-  box-shadow: 5px 5px 9px #310009; 
+  box-shadow: 5px 5px 9px #310009;
+  position: relative; 
+  transform-style: preserve-3d;
+}
+
+.song-panel-whole .song-artwork:hover {
+  transform: translateZ(20px) scaleY(1);
 }
 
 /*---------------------------------- Submit Email*/
@@ -387,10 +395,24 @@ box-shadow: 2px 4px 6px rgb(0, 0, 0, 0.3);
 }
 
 
+a:hover {
+    background: linear-gradient(90deg,#ff8a00,#e52e71);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    text-shadow: none;
+}
+
 .footer-buttons:hover {
-text-decoration: none;
-color: black;
-border-color: black;
+    background: linear-gradient(90deg,#ff8a00,#e52e71);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    text-shadow: none;
 }
 
 .copyright {
@@ -421,9 +443,6 @@ margin-bottom: 10px;
 
  .footer-buttons {
   width: 100px;
-  background: transparent;
-  border: 0.1px solid rgba(192, 89, 127, 0.2);
-  color: #D81B60;
   padding: 0.8em 1em;
   margin: 0;
  }

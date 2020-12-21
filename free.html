@@ -84,9 +84,9 @@
 
     <div class="container-wrapper container song-panel">
             <div class="row">
-                <div class="song-artwork">
+                <div class="song-artwork data-tilt">
                         <div class="col-4 col-12">
-                            <img 
+                            <img class="transform-hover"
                             src="./assets/images/albumcovers/METTA-Free.jpg" 
                             alt="Artwork for METTA - Free"
                             >
@@ -295,9 +295,16 @@
 </div>
 
 <!-- /.Footer-->
-
+    <script type="text/javascript" src="/assets/js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".song-artwork"), {
+		max: 25,
+		speed: 400
+	});
+	VanillaTilt.init(document.querySelectorAll(".song-artwork"));
+    </script>
     <script 
-        src="/js/main.js"
+        src="/assets/js/main.js"
     ></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
