@@ -423,6 +423,7 @@ box-shadow: 2px 4px 6px rgb(0, 0, 0, 0.3);
   -webkit-transition-property: top, right, bottom, left;
   transition-property: top, right, bottom, left;
 }
+
 .hvr-outline-in:hover:before, .hvr-outline-in:focus:before, .hvr-outline-in:active:before {
   top: -4px;
   right: -4px;
