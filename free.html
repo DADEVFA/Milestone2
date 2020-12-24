@@ -36,47 +36,25 @@
 </head>
 
 <body>
-<!--Gradient Jumbo-->
-
-    <div class="container-gradient-bg-header">
 
 <!-- Navigation -->
 
-		<nav class="navbar navigation navbar-dark navbar-header">
-                <a class="navbar-logo top" href="index.html">
+		<nav>
+                <a class="metta-logo top" href="index.html">
                     <img src="./assets/images/logos/metta-logo-gradient.png" alt="METTA" width="140" height="20">
                 </a>
-                    <button
-                        class="navbar-toggler ml-auto"
-                        type="button"
-                        data-toggle="collapse"
-                        data-target="#navigationDrop"
-                        aria-controls="navigationDrop"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon">
-                        </span>
-                    </button>
-
-            <div class="collapse navbar-collapse" id="navigationDrop">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item nav-dark-font">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="music.html">Music</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Change Theme</a>
-                    </li>
-                </ul>
-            </div>
+                    
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                        <ul class="nav-links specialfont">
+                            <li><a class="menu-button hvr-float-shadow" href="#">HOME</a></li>
+                            <li><a class="menu-button hvr-float-shadow" href="#">MUSIC</a></li>
+                            <li><a class="menu-button hvr-float-shadow" href="#">CONTACT</a></li>
+                        </ul>
         </nav>
-    </div>
 
 <!-- /.Navigation -->
 
@@ -303,6 +281,7 @@
 	});
 	VanillaTilt.init(document.querySelectorAll(".song-artwork"));
     </script>
+    <script src="/assets/js/navigation.js"></script>
     <script 
         src="/assets/js/main.js"
     ></script>
