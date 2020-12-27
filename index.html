@@ -74,18 +74,24 @@
 <!-- Latet Releases-->
     <div class="container-wrapper container index-songsection">
         <h2 class="index-songs-header">Latest Relases</h2>
-            <div class="row center-row">
+            <div class="row center-row ">
                 <a href="free">
-                    <div class="albumcover">
+                    <div class="albumcover data-tilt">
                         <div class="col-12">
-                            <img src="./assets/images/albumcovers/METTA-Free.jpg" alt="Artwork for METTA - Free">
+                            <img 
+                                class="transform-hover"
+                                src="./assets/images/albumcovers/METTA-Free.jpg" 
+                                alt="Artwork for METTA - Free">
                         </div>
                     </div>
                 </a>
                 <a href="everything">
-                    <div class="albumcover">
+                    <div class="albumcover data-tilt">
                         <div class="col-12">
-                            <img src="./assets/images/albumcovers/METTA-Everything.jpg" alt="Artwork for METTA - Everything">
+                            <img 
+                                class="transform-hover"
+                                src="./assets/images/albumcovers/METTA-Everything.jpg" 
+                                alt="Artwork for METTA - Everything">
                         </div>
                     </div>
                 </a>
@@ -224,11 +230,11 @@
 
     <script type="text/javascript" src="/assets/js/vanilla-tilt.js"></script>
     <script type="text/javascript">
-	VanillaTilt.init(document.querySelector(".song-artwork"), {
+	VanillaTilt.init(document.querySelector(".albumcover"), {
 		max: 25,
 		speed: 400
 	});
-	VanillaTilt.init(document.querySelectorAll(".song-artwork"));
+	VanillaTilt.init(document.querySelectorAll(".albumcover"));
     </script>
     <script src="/assets/js/navigation.js"></script>
     <script 
