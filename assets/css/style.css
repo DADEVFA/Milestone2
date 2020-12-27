@@ -24,6 +24,13 @@ nav {
   margin: 0;
 }
 
+.nav-index {
+  background: transparent;
+  height: 10vh;
+  width: 100%;  
+  margin: 0;
+}
+
 .hamburger {
     position: absolute;
     cursor: pointer;
