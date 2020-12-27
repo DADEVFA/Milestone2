@@ -32,12 +32,12 @@ nav {
 }
 
 .hamburger {
-    position: absolute;
-    cursor: pointer;
-    right: 5%;
-    top: 50%;
-    transform: translate(-5%, -50%);
-    z-index: 2;
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 50%;
+  transform: translate(-5%, -50%);
+  z-index: 2;
   }
 
 .nav-links {
@@ -82,49 +82,63 @@ nav {
   z-index: 3;
 }
 
-  .line {
-    width: 30px;
-    height: 3px;
-    background: white;
-    margin: 5px;
+.nav-links.open {
+  clip-path: circle(9000px at 90% -1%);
+  -webkit-clip-path: circle(9000px at 90% -1%);
   }
 
-  .nav-links.open {
-    clip-path: circle(10000px at 90% -1%);
-    -webkit-clip-path: circle(10000px at 90% -1%);
-  }
-
-  .landing {
-    flex-direction: column;
-  }
-  .nav-links li {
-    opacity: 0;
-  }
-  .nav ul li a {
-    font-size: 3vh;
-    z-index: 5;
-  }
-  .nav-links li:nth-child(1) {
-    transition: all 0.7s ease 0.5s;
-  }
-  .nav-links li:nth-child(2) {
-    transition: all 0.7s ease 0.7s;
-  }
-  .nav-links li:nth-child(3) {
-    transition: all 0.7s ease 0.9s;
-  }
-  li.fades {
-    opacity: 1;
-  }
+.landing {
+  flex-direction: column;
+}
+.nav-links li {
+  opacity: 0;
+}
+.nav ul li a {
+  font-size: 3vh;
+  z-index: 5;
+}
+.nav-links li:nth-child(1) {
+  transition: all 0.7s ease 0.5s;
+}
+.nav-links li:nth-child(2) {
+  transition: all 0.7s ease 0.7s;
+}
+.nav-links li:nth-child(3) {
+  transition: all 0.7s ease 0.9s;
+}
+li.fades {
+  opacity: 1;
+}
 
 .metta-logo {
-    position: absolute;
-    cursor: pointer;
-    left: 5%;
-    top: 50%;
-    transform: translate(-5%, -50%);
-    margin-left: 16px;
-    z-index: 3;
+  position: absolute;
+  cursor: pointer;
+  left: 5%;
+  top: 50%;
+  transform: translate(-5%, -50%);
+  margin-left: 16px;
+  z-index: 3;
+}
+/*-------------------------------Hamburger Animation*/
+.changelines .line-1 {
+  transform: rotateZ(-405deg) translate(-8px, 4px);
+}
+
+.changelines .line-2 {
+  opacity: 0;
+}
+
+.changelines .line-3 {
+  transform: rotateZ(405deg) translate(-8px, -4px);
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background: white;
+  margin: 5px;
+  transition: all 0.8s;
+
 }
 
 

@@ -25,3 +25,10 @@ function myFunction() {
             $(".terms-button").html('Close Terms');
         });
     });
+
+
+const menuIcon = document.querySelector(".hamburger");
+
+menuIcon.addEventListener("click", () => {
+  menuIcon.classList.toggle("changelines");
+});
