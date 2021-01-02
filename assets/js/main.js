@@ -27,8 +27,18 @@ function myFunction() {
     });
 
 
+//Animation for Hamburger" 
+
 const menuIcon = document.querySelector(".hamburger");
 
 menuIcon.addEventListener("click", () => {
   menuIcon.classList.toggle("changelines");
 });
+
+
+//Animation for share button" 
+
+function toggleShareMenu(){
+  document.getElementsByClassName("share-menu")
+  [0].classList.toggle("active");
+}
