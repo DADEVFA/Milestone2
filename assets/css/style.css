@@ -251,8 +251,14 @@ li.fades {
 .songs-header {
   color: rgb(216, 27, 96);
   font-weight:400;
-  font-size: 2.9vh;
+  font-size: 3vh;
   text-align: left;
+  font-family: "Raleway";
+}
+
+.track-artists {
+  color: black;
+  font-size: 2.8vh;
 }
 
 .song-panel-top-right {
@@ -302,14 +308,14 @@ li.fades {
   line-height: 1.15384615;
   display: inline-block;
   position: relative;
-  margin: 20px 0 10px 0;
+  margin: 10px 0 10px 0;
   text-align: center;
 }
-
 
 .music-services-top-area {
   width: 70%;
   text-align: left;
+  margin-top: 10px;
 }
 
 .streaming-services-box {
@@ -624,7 +630,7 @@ box-shadow: 2px 4px 6px rgb(0, 0, 0, 0.3);
   text-align: center;
   justify-content: center;
   text-align: center;
-  font-size: 13px;
+  font-size: 11px;
   letter-spacing: 0.2px;
   font-weight: 600;
   display: inline-block;
@@ -695,68 +701,68 @@ margin-bottom: 10px;
 }
 
 .share-menu.active div:nth-child(2){
-  top:600%;
+  top:450%;
   left:-160%;
   transform:translate(-50%,-100%);
   transition:all 300ms ease-in-out 450ms;
   width: 50px;
   height: 50px;
-  font-size: 25px;
+  font-size: 23px;
   line-height: 50%;
 }
 
 .share-menu.active div:nth-child(3){
-  top:600%;
+  top:450%;
   left:-110%;
   transform:translate(-50%,-100%);
   transition:all 300ms ease-in-out 400ms;
-   width: 50px;
+  width: 50px;
   height: 50px;
-  font-size: 25px;
+  font-size: 23px;
   line-height: 50%;
 }
 
 .share-menu.active div:nth-child(4){
-  top:600%;
+  top:450%;
   left:-60%;
   transform:translate(-50%,-100%);
   transition:all 300ms ease-in-out 290ms;
-   width: 50px;
+  width: 50px;
   height: 50px;
-  font-size: 25px;
+  font-size: 23px;
   line-height: 50%;
 }
 
 .share-menu.active div:nth-child(5){
-  top:600%;
+  top:450%;
   left:-10%;
   transform:translate(-50%,-100%);
   transition:all 300ms ease-in-out 190ms;
-   width: 50px;
+  width: 50px;
   height: 50px;
-  font-size: 25px;
+  font-size: 23px;
   line-height: 50%;
 }
 
 .share-menu.active div:nth-child(6){
-  top:600%;
+  top:450%;
   left:40%;
   transform:translate(-50%,-100%);
   transition:all 300ms ease-in-out 100ms;
-   width: 50px;
+  width: 50px;
   height: 50px;
-  font-size: 25px;
+  font-size: 23px;
   line-height: 50%;
 }
 
 .share-menu.active div:nth-child(7){
-  top:600%;
+  top:450%;
   left:90%;
   transform:translate(-50%,-100%);
   transition:all 300ms ease-in-out 20ms;
-   width: 50px;
+  width: 50px;
   height: 50px;
-  font-size: 25px;
+  font-size: 23px;
   line-height: 50%;
 }
 
@@ -770,7 +776,7 @@ margin-bottom: 10px;
  .albumcover img {
   margin: 30px 0 60px 0;
 }
-  .footer-buttons-box a {
+ .footer-buttons-box a {
   padding: 0;
   text-align: center;
   align-content: center;
@@ -789,13 +795,13 @@ margin-bottom: 10px;
 }
 
 @media (min-width: 375px) {
-.footer-buttons {
+ .footer-buttons {
   margin: 0 5px 0 5px;
  }
 }
 
 @media (max-width: 375px) {
-.song-panel-top-right {
+ .song-panel-top-right {
   margin-top: -5px;
  }
  .streaming-services-box {
@@ -804,10 +810,10 @@ margin-bottom: 10px;
 }
 
 @media (min-width: 767px) {
-.footer-socials {
+ .footer-socials {
   margin: 40px 10px 50px 10px;
   }
-  .streaming-services-apps {
+ .streaming-services-apps {
     margin: 20px;
  }
  .song-panel-whole {
@@ -816,21 +822,37 @@ margin-bottom: 10px;
 }
 
 @media (max-width: 767px) {
-  .email-submit-box {
+ .email-submit-box {
   margin: 20px;
   }
-  .choose-music-service {
+ .choose-music-service {
   width: 60%;
-  margin: 20px 5px 10px 10px;
+  margin: 10px 5px 10px 10px;
+  font-size: 1.2vh;
  }
  .back-to-all-music {
-  width: 60%;
+  width: 70%;
   margin-right: 10px;
+ }
+ .song-buttons {
+  font-size: 1.2vh;
+ }
+ .song-panel {
+  margin-top: -50px;
+ }
+ .song-panel-whole {
+  margin-top: -40px;
  }
 }
 
 @media (min-height: 766px) {
-.songs-header {
-  font-size: 2.7vh;
+ .songs-header {
+  font-size: 3vh;
+ }
 }
+
+@media (min-height: 1000px) {
+  .choose-music-service {
+  margin-top: 40px;
+  }
 }
