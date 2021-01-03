@@ -229,9 +229,9 @@ li.fades {
 }
 
 .song-panel-whole {
-    width: 100%;
-    max-width: 600px;
-    transform-style: preserve-3d;
+  width: 100%;
+  max-width: 600px;
+  transform-style: preserve-3d;
 }
 
 .song-panel-top {
@@ -306,6 +306,7 @@ li.fades {
   text-align: center;
 }
 
+
 .music-services-top-area {
   width: 70%;
   text-align: left;
@@ -319,6 +320,13 @@ li.fades {
   justify-content: center;
   margin-top: 10px;
   float: left;
+  font-size: 12px;
+  color: #D81B60;
+}
+
+.streaming-services-box p {
+  color: #D81B60;
+  font-family: "Raleway";
 }
 
 .streaming-services-box img {
