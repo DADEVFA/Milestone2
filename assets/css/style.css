@@ -321,7 +321,6 @@ li.fades {
   margin-top: 10px;
   float: left;
   font-size: 12px;
-  color: #D81B60;
 }
 
 .streaming-services-box p {
@@ -799,6 +798,9 @@ margin-bottom: 10px;
 .song-panel-top-right {
   margin-top: -5px;
  }
+ .streaming-services-box {
+  height: auto;
+ }
 }
 
 @media (min-width: 767px) {
@@ -817,6 +819,14 @@ margin-bottom: 10px;
   .email-submit-box {
   margin: 20px;
   }
+  .choose-music-service {
+  width: 60%;
+  margin: 20px 5px 10px 10px;
+ }
+ .back-to-all-music {
+  width: 60%;
+  margin-right: 10px;
+ }
 }
 
 @media (min-height: 766px) {
