@@ -46,3 +46,14 @@ function toggleShareMenu(){
   [0].classList.toggle("active");
 }
 
+//Play changes to Pause function with collapse " 
+
+    $(document).ready(function(){
+
+            $("#play-button").on("hide.bs.collapse", function(){
+            $(".play-button-box").html('<i class="far fa-play-circle"></i>');
+        });
+            $("#play-button").on("show.bs.collapse", function(){
+            $(".play-button-box").html('<i class="far fa-pause-circle"></i>');
+        });
+    });
