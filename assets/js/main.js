@@ -27,12 +27,15 @@ function myFunction() {
     });
 
 
-//Animation for Hamburger" 
+//Animation for Hamburger + No Scrolling Menu" 
 
 const menuIcon = document.querySelector(".hamburger");
 
 menuIcon.addEventListener("click", () => {
   menuIcon.classList.toggle("changelines");
+  // No Scroll in Menu function"
+  let fix = document.querySelector("body");
+  fix.classList.toggle("fixed-menu")
 });
 
 
@@ -42,3 +45,4 @@ function toggleShareMenu(){
   document.getElementsByClassName("share-menu")
   [0].classList.toggle("active");
 }
+

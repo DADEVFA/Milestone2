@@ -119,6 +119,11 @@ li.fades {
   margin-left: 16px;
   z-index: 3;
 }
+
+.fixed-menu {
+  overflow: hidden;
+}
+
 /*-------------------------------Hamburger Animation*/
 .changelines .line-1 {
   transform: rotateZ(-405deg) translate(-8px, 4px);
