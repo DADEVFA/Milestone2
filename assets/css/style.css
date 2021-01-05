@@ -367,6 +367,7 @@ box-shadow: 2px 4px 6px rgb(0, 0, 0, 0.3);
   margin-top: 70px;
   transform-style: preserve-3d;
   justify-content: center;
+  position: relative;
 }
 
 .song-artwork img {
@@ -383,7 +384,7 @@ box-shadow: 2px 4px 6px rgb(0, 0, 0, 0.3);
   left: 40%;
   z-index: 30;
   position: fixed;
-border-radius: 50%;
+  border-radius: 50%;
 }
 
 .song-artwork:hover .play-button-box {
@@ -407,6 +408,48 @@ border-radius: 50%;
   box-shadow: 5px 5px 9px #310009;
   transform-style: preserve-3d;
   color: white;
+  position: relative;
+}
+
+.metta-cd-animation {
+  width: 500px;
+  box-shadow: none;
+  background-color:rgba(216, 27, 184, 0.6);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.merge-cover-cd {
+  position: relative;
+}
+
+.top-img-albumcover {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.second-img-cd {
+  position: absolute;
+  width: 470px;
+  height: auto;
+  top: 0;
+  left: 0;
+}
+
+.song-artwork:hover .top-img-albumcover {
+  left: -100px;
+}
+
+.song-artwork:hover .preview-box {
+  left: -100px;
+}
+
+.song-artwork:hover .play-button-box {
+  text-align: center;
+  left: 20%
 }
 
 .song-panel-whole .song-artwork:hover {
@@ -879,6 +922,9 @@ margin-bottom: 10px;
  }
  .song-panel-whole {
   margin-top: -40px;
+ }
+ .metta-cd-animation {
+  display: none;
  }
 }
 
