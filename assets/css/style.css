@@ -440,18 +440,27 @@ box-shadow: 2px 4px 6px rgb(0, 0, 0, 0.3);
 }
 
 .song-artwork:hover .top-img-albumcover {
+  transition: all 1s ease-in-out;
   left: -100px;
 }
 
 .song-artwork:hover .preview-box {
+  transition: all 1s ease-in-out;
   left: -100px;
 }
 
 .song-artwork:hover .play-button-box {
+  transition: all 1s ease-in-out;
   text-align: center;
   left: 20%
 }
 
+.preview-text {
+transition: all 1s ease-out;
+margin-top: 30px;
+margin-left: 10px;
+font-size: 20px;
+}
 .song-panel-whole .song-artwork:hover {
   transform: translateZ(20px) scaleY(1);
 }
