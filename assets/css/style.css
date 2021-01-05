@@ -61,6 +61,15 @@ nav {
   letter-spacing: 1px;
 }
 
+.menu-button:hover {
+    background: linear-gradient(90deg,#ff8a00,#e52e71);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
 .nav-links li a {
   color: white;
   text-decoration: none;
@@ -468,13 +477,17 @@ font-size: 20px;
 
 /*---------------------------------- Music */
 
+.music-library-all {
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+
 .music-library {
   max-width: 450px;
-  transform-style: preserve-3d;
   justify-content: center;
-  position: relative;
   display: inline-flex;
-  margin: 10px;
+  margin: 10px 10px 50px 10px;
 }
 
 .music-library img {
@@ -493,6 +506,7 @@ font-size: 20px;
   font-family: "Raleway";
   margin-top: 20px; 
 }
+
 
 /* Float Shadow - Ian Lunn Hover Effects */
 
@@ -754,17 +768,6 @@ font-size: 20px;
   display: inline-block;
   position: relative;
   line-height: 1.15384615;
-}
-
-
-a:hover {
-    background: linear-gradient(90deg,#ff8a00,#e52e71);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
-    text-shadow: none;
 }
 
 .footer-buttons:hover {
