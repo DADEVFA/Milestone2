@@ -1058,6 +1058,17 @@ border-bottom: 0.3px solid #D81B60;
  }
 }
 
+@media (min-width: 414px) {
+  .gradient-logo img {
+  margin: 0 0 70px 0;
+ }
+ .jumbo-button {  
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.6);
+  padding: 7px 22px;
+  font-size: 12px;
+ } 
+}
+
 @media (max-width: 375px) {
  .song-panel-top-right {
   margin-top: -5px;
@@ -1065,6 +1076,14 @@ border-bottom: 0.3px solid #D81B60;
  .streaming-services-box {
   height: auto;
  }
+ .gradient-logo img {
+  margin: 0 0 80px 0;
+ }
+ .jumbo-button {  
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.6);
+  padding: 7px 22px;
+  font-size: 12px;
+ } 
 }
 
 @media (min-width: 767px) {
@@ -1077,7 +1096,16 @@ border-bottom: 0.3px solid #D81B60;
  .song-panel-whole {
     margin-left: 10px;
  }
+  .gradient-logo img {
+  margin: 0 0 90px 0;
+ }
+ .jumbo-button {  
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.6);
+  padding: 8px 25px;
+  font-size: 14px;
+ } 
 }
+
 
 @media (max-width: 767px) {
  .email-submit-box {

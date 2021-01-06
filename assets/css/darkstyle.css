@@ -1058,7 +1058,15 @@ border-bottom: 0.3px solid #963CAA;
 @media (min-width: 375px) {
  .footer-buttons {
   margin: 0 5px 0 5px;
+ }edia (min-width: 414px) {
+  .gradient-logo img {
+  margin: 0 0 70px 0;
  }
+ .jumbo-button {  
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.6);
+  padding: 7px 22px;
+  font-size: 12px;
+ } 
 }
 
 @media (max-width: 375px) {
@@ -1068,6 +1076,14 @@ border-bottom: 0.3px solid #963CAA;
  .streaming-services-box {
   height: auto;
  }
+ .gradient-logo img {
+  margin: 0 0 80px 0;
+ }
+ .jumbo-button {  
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.6);
+  padding: 7px 22px;
+  font-size: 12px;
+ } 
 }
 
 @media (min-width: 767px) {
@@ -1082,7 +1098,15 @@ border-bottom: 0.3px solid #963CAA;
  }
 }
 
-@media (max-width: 767px) {
+@m
+  .gradient-logo img {
+  margin: 0 0 90px 0;
+ }
+ .jumbo-button {  
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.6);
+  padding: 8px 25px;
+  font-size: 14px;
+ } edia (max-width: 767px) {
  .email-submit-box {
   margin: 20px 20px 50px 20px;
   }
@@ -1106,6 +1130,9 @@ border-bottom: 0.3px solid #963CAA;
  }
  .metta-cd-animation {
   display: none;
+ }
+  .gradient-logo img {
+  margin: 0 0 140px 0;
  }
 }
 
