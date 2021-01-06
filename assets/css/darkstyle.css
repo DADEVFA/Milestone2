@@ -1,0 +1,999 @@
+body {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  background: rgb(3, 3, 3, 0.9);
+}
+
+.specialfont {
+  font-family: reross-rectangular, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/*---------------------------------- Modified DevEdwins Animated Navigation */
+
+nav {
+  background: linear-gradient(-55deg, #8d30a1, #ce5834, #8d30a1, #d33f50);
+  background-size: 500%, 400%;
+  position: relative;
+  animation: change 35s ease-in-out infinite;
+  height: 10vh;
+  width: 100%;  
+  margin: 0;
+}
+
+.nav-index {
+  background: transparent;
+  height: 10vh;
+  width: 100%;  
+  margin: 0;
+}
+
+.hamburger {
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 50%;
+  transform: translate(-5%, -50%);
+  z-index: 2;
+  }
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 0;
+  margin-left: auto;
+  position: fixed;
+  background: linear-gradient(-55deg, #8d30a1, #ce5834, #8d30a1, #d33f50);
+  background-size: 500%, 400%;
+  animation: change 35s ease-in-out infinite;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  clip-path: circle(1px at 90% -1%);
+  -webkit-clip-path: circle(1px at 90% -1%);
+  transition: all 2s ease-in-out;
+  z-index: 1;
+  letter-spacing: 1px;
+}
+
+.menu-button:hover {
+    background: linear-gradient(90deg,#ff8a00,#e52e71);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.7vh;
+  border: solid 0.1px white;
+  padding: 0.7em 1em;
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.nav-links li a:hover{
+  border: solid 0.08px black;
+}
+
+.landing {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.nav-links.open {
+  clip-path: circle(9000px at 90% -1%);
+  -webkit-clip-path: circle(9000px at 90% -1%);
+  }
+
+.landing {
+  flex-direction: column;
+}
+.nav-links li {
+  opacity: 0;
+}
+.nav ul li a {
+  font-size: 3vh;
+  z-index: 5;
+}
+.nav-links li:nth-child(1) {
+  transition: all 0.7s ease 0.5s;
+}
+.nav-links li:nth-child(2) {
+  transition: all 0.7s ease 0.7s;
+}
+.nav-links li:nth-child(3) {
+  transition: all 0.7s ease 0.9s;
+}
+li.fades {
+  opacity: 1;
+}
+
+.metta-logo {
+  position: absolute;
+  cursor: pointer;
+  left: 5%;
+  top: 50%;
+  transform: translate(-5%, -50%);
+  margin-left: 16px;
+  z-index: 3;
+}
+
+.fixed-menu {
+  overflow: hidden;
+}
+
+/*-------------------------------Hamburger Animation*/
+.changelines .line-1 {
+  transform: rotateZ(-405deg) translate(-8px, 4px);
+}
+
+.changelines .line-2 {
+  opacity: 0;
+}
+
+.changelines .line-3 {
+  transform: rotateZ(405deg) translate(-8px, -4px);
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background: white;
+  margin: 5px;
+  transition: all 0.8s;
+}
+
+
+/*-------------------------------Gradient Jumbotron*/
+
+.container-gradient-bg {
+  width: 100%;
+  height: 80vh;
+  color: #fff;
+  background: linear-gradient(-55deg, #8d30a1, #ce5834, #8d30a1, #d33f50);
+  background-size: 500%, 400%;
+  position: relative;
+  animation: change 35s ease-in-out infinite;
+}
+
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.callout-container {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gradient-logo img {
+  width: 100%;
+  height: auto;
+  padding: 25px;
+  margin: 0 0 150px 0;
+}
+
+.jumbo-button {  
+  color: white;
+  text-decoration: none;
+  font-size: 1.7vh;
+  border: solid 0.1px white;
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.6);
+  padding: 8px 25px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.jumbo-button:hover {
+border: solid 0.08px black;
+color: white;
+}
+
+/*-------------------------------Latest Releases*/
+
+.index-songsection {
+  text-align: center;
+  justify-content: center;
+}
+
+.center-row {
+  justify-content: center;
+}
+
+.index-songs-header {
+  color: rgb(150, 60, 170);
+  margin: 70px 0 40px 0;
+  font-weight:400;
+}
+
+.albumcover img {
+  height: auto;
+  width: 100%;
+  max-width: 550px;
+  margin: 30px 30px 60px 30px;
+  box-shadow: 5px 5px 9px #310018; 
+}
+
+/*---------------------------------- Individual Song Pages */
+
+.song-panel {
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.song-panel-whole {
+  width: 100%;
+  max-width: 600px;
+  transform-style: preserve-3d;
+}
+
+.song-panel-top {
+  height: 60px;
+  width: 100%;
+  margin-top: 70px;
+  vertical-align: middle;
+}
+
+.song-panel-top-left {
+  height: 60px;
+  width: 50%;
+  float: left;
+  text-align: left;
+}
+
+.songs-header {
+  color: rgb(150, 60, 170);
+  font-weight:400;
+  font-size: 3vh;
+  text-align: left;
+  font-family: "Raleway";
+}
+
+.track-artists {
+  color: white;
+  font-size: 2.8vh;
+}
+
+.song-panel-top-right {
+  height: 60px;
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+
+.song-buttons {
+  width: 40%;
+  background: transparent;
+  border: 0.2px solid rgba(150, 60, 170, 0.3);
+  color: #963CAA;
+  padding: 0.8em 1em;
+  font-size: 1.1vh;
+  letter-spacing: 0.1px;
+  font-weight: 600;
+  position: relative;
+  line-height: 1.15384615;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+
+.song-buttons:hover {
+    background: linear-gradient(90deg,#ff8a00,#e52e71);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    text-shadow: none;
+    border: hidden;
+}
+
+.choose-music-service {
+  width: 60%;
+  background: transparent;
+  border: 0.2px solid rgba(150, 60, 170, 0.3);
+  color: #963CAA;
+  padding: 0.8em 1em;
+  font-size: 1.1vh;
+  letter-spacing: 0.1px;
+  font-weight: 600;
+  position: relative;
+  line-height: 1.15384615;
+  display: inline-block;
+  position: relative;
+  margin: 10px 0 10px 0;
+  text-align: center;
+  cursor: default;
+}
+
+.music-services-top-area {
+  width: 70%;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.streaming-services-box {
+  background-color: rgb(134, 124, 125, 0.06);
+  width: 100%;
+  height: 250px;
+  padding: 25px 40px;
+  justify-content: center;
+  margin-top: 10px;
+  float: left;
+  font-size: 12px;
+  border: 0.1px solid rgba(150, 60, 170, 0.1);
+  box-shadow: 0px 3px 6px rgb(0, 0, 0, 0.16);
+}
+
+.streaming-services-box p {
+  color: #963CAA;
+  font-family: "Raleway";
+}
+
+.streaming-services-box img {
+box-shadow: 2px 4px 6px rgb(0, 0, 0, 0.3); 
+}
+
+.streaming-services-apps {
+  margin: 10px;
+}
+
+.row {
+  justify-content: center;
+}
+
+.back-to-all-music {
+  text-align: right;
+  width: 55%;
+  float: right;
+  margin-top: 20px;
+}
+
+.back-to-all-music-button:hover {
+ border: hidden;
+}
+
+.song-artwork {
+  max-width: 500px;
+  margin-bottom: 10px;
+  margin-top: 70px;
+  transform-style: preserve-3d;
+  justify-content: center;
+  position: relative;
+}
+
+.song-artwork img {
+  height: auto;
+  width: 100%;
+  box-shadow: 5px 5px 9px #310018;
+  position: relative; 
+  transform-style: preserve-3d;
+}
+
+.play-button-box {
+  display: none;
+  top: 40%;
+  left: 40%;
+  z-index: 30;
+  position: fixed;
+  border-radius: 50%;
+}
+
+.song-artwork:hover .play-button-box {
+  transform: translateZ(80px);
+  background: transparent;
+  width: 100px;
+  height: 100px;
+  transform-style: preserve-3d;
+  display: flex;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  font-size: 9vh;
+  color: white;
+}
+
+.preview-box {
+  width: calc(100% - 30px);
+  height: 85px;
+  border: transparent;
+  box-shadow: 5px 5px 9px #310018;
+  transform-style: preserve-3d;
+  color: white;
+  position: relative;
+}
+
+.metta-cd-animation {
+  width: 500px;
+  box-shadow: none;
+  background-color:rgba(216, 27, 184, 0.6);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.merge-cover-cd {
+  position: relative;
+}
+
+.top-img-albumcover {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.second-img-cd {
+  position: absolute;
+  width: 470px;
+  height: auto;
+  top: 0;
+  left: 0;
+}
+
+.song-artwork:hover .top-img-albumcover {
+  transition: all 1s ease-in-out;
+  left: -100px;
+}
+
+.song-artwork:hover .preview-box {
+  transition: all 1s ease-in-out;
+  left: -100px;
+}
+
+.song-artwork:hover .play-button-box {
+  transition: all 1s ease-in-out;
+  text-align: center;
+  left: 20%
+}
+
+.preview-text {
+transition: all 1s ease-in-out;
+margin-top: 30px;
+margin-left: 10px;
+font-size: 20px;
+}
+
+.song-panel-whole .song-artwork:hover {
+  transform: translateZ(20px) scaleY(1);
+}
+
+/*---------------------------------- Music */
+
+.music-library-all {
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.music-library {
+  max-width: 450px;
+  justify-content: center;
+  display: inline-flex;
+  margin: 10px 10px 50px 10px;
+}
+
+.music-library img {
+  height: auto;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 5px 5px 9px #310018; 
+  margin: 20px 0 20px 0;
+}
+
+.songs-header-library {
+  color: rgb(150, 60, 170);
+  font-weight:400;
+  font-size: 3vh;
+  text-align: left;
+  font-family: "Raleway";
+  margin-top: 20px; 
+}
+
+
+/* Float Shadow - Ian Lunn Hover Effects */
+
+.hvr-float-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+}
+
+/* Icon Bob - Ian Lunn Hover Effects */
+
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+/* Outline In  - Ian Lunn Hover Effects*/ 
+
+.hvr-outline-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+.hvr-outline-in:before {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  border: rgb(216, 27, 96, 0.5) solid 1px;
+  top: -14px;
+  right: -14px;
+  bottom: -14px;
+  left: -14px;
+  opacity: 0;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: top, right, bottom, left;
+  transition-property: top, right, bottom, left;
+}
+
+.hvr-outline-in:hover:before, .hvr-outline-in:focus:before, .hvr-outline-in:active:before {
+  top: -4px;
+  right: -4px;
+  bottom: -4px;
+  left: -4px;
+  opacity: 1;
+}
+
+/*---------------------------------- Submit Email*/
+
+.email-submit-zone {
+  align-items: center;
+  justify-content: center;
+}
+
+.inline {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.email-submit-box {
+  margin: 40px 80px;
+  color: #963CAA;
+  border: 0.4px solid rgba(150, 60, 170, 0.3);
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  box-shadow: 3px 5px 5px rgb(49, 0, 9, 0.24);
+  background-color: rgb(134, 124, 125, 0.06);
+}
+
+.email-input {
+  color: #963CAA;
+  border-width: 0 0 1px 0;
+}
+
+.form-control {
+ background: transparent;
+ border-bottom: 0.8px solid #963CAA;
+ padding: 0;
+}
+
+.submit-button {
+  background: transparent;
+  letter-spacing: 1px;
+  border: 0.2px solid rgba(150, 60, 170, 0.3);
+  color: #963CAA;
+  padding: 8px 30px;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 18px 0 23px;
+  cursor: pointer;
+}
+
+.sent-button {
+  background: transparent;
+  letter-spacing: 1px;
+  border: 0.2px solid rgba(150, 60, 170, 0.3);
+  color: #963CAA;
+  padding: 8px 37px;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 18px 0 23px;
+  cursor: pointer;
+}
+
+.terms-button {
+  margin-top: 10px;
+  letter-spacing: 1px;
+  color: #963CAA;
+  padding: 8px 0;
+  font-size: 14px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.collapse {
+  font-size: 12px;
+  font-weight: 300px;
+  color: gray;
+}
+
+/*------------------------------- Footer*/
+
+.footer {
+  background-color: rgb(134, 124,125, 0.21);
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  font-size: 13px;
+  color: rgb(150, 60, 170);
+  position: relative;
+}
+
+.footer-socials {
+  margin: 40px 3px 50px 3px;
+  box-shadow: 2px 4px 6px rgb(0, 0, 0, 0.3); 
+}
+
+.sociallinks-box a {
+    text-decoration: none;
+}
+
+.footer-buttons-box {
+  margin-top: 20px;
+  width: 100;
+}
+
+.footer-buttons-box a {
+  padding: 10px;
+  text-align: center;
+  align-content: center;
+}
+
+.footer-buttons {
+  width: 100px;
+  background: transparent;
+  border: 0.2px solid rgba(150, 60, 170, 0.3);
+  color: #963CAA;
+  margin: 0 5px 0 5px;
+  padding: 0.8em 1em;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+  display: inline-block;
+  position: relative;
+  line-height: 1.15384615;
+}
+
+.footer-buttons:hover {
+    background: linear-gradient(124deg,#ff8a00,#e52e71);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    text-shadow: none;
+    border: hidden;
+}
+
+.copyright {
+position: absolute;
+text-align: center;
+bottom: 0;
+width: 100%;
+margin-bottom: 10px;
+}
+
+.center {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+.share-menu {
+  position:relative;
+  display: inline;
+
+}
+.share-menu .share-btn {
+  position:absolute;
+  z-index:2;
+}
+
+.share-menu .social-btn {
+  position:absolute;
+  top:-65%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:0;
+  height:0;  
+  cursor:pointer;
+  text-align:center;
+  line-height:75px;
+  font-size:0px;
+  transition:all 300ms ease-in-out 0ms;
+  color: #ff8a00;
+}
+
+.share-menu.active div:nth-child(2){
+  top:450%;
+  left:-160%;
+  transform:translate(-50%,-100%);
+  transition:all 300ms ease-in-out 450ms;
+  width: 50px;
+  height: 50px;
+  font-size: 23px;
+  line-height: 50%;
+}
+
+.share-menu.active div:nth-child(3){
+  top:450%;
+  left:-110%;
+  transform:translate(-50%,-100%);
+  transition:all 300ms ease-in-out 400ms;
+  width: 50px;
+  height: 50px;
+  font-size: 23px;
+  line-height: 50%;
+}
+
+.share-menu.active div:nth-child(4){
+  top:450%;
+  left:-60%;
+  transform:translate(-50%,-100%);
+  transition:all 300ms ease-in-out 290ms;
+  width: 50px;
+  height: 50px;
+  font-size: 23px;
+  line-height: 50%;
+}
+
+.share-menu.active div:nth-child(5){
+  top:450%;
+  left:-10%;
+  transform:translate(-50%,-100%);
+  transition:all 300ms ease-in-out 190ms;
+  width: 50px;
+  height: 50px;
+  font-size: 23px;
+  line-height: 50%;
+}
+
+.share-menu.active div:nth-child(6){
+  top:450%;
+  left:40%;
+  transform:translate(-50%,-100%);
+  transition:all 300ms ease-in-out 100ms;
+  width: 50px;
+  height: 50px;
+  font-size: 23px;
+  line-height: 50%;
+}
+
+.share-menu.active div:nth-child(7){
+  top:450%;
+  left:90%;
+  transform:translate(-50%,-100%);
+  transition:all 300ms ease-in-out 20ms;
+  width: 50px;
+  height: 50px;
+  font-size: 23px;
+  line-height: 50%;
+}
+
+/*---------------------------------- Screensize*/
+
+/*------------------------------ Phone*/
+
+
+
+@media (min-width: 319px) {
+ .albumcover img {
+  margin: 30px 0 60px 0;
+}
+ .footer-buttons-box a {
+  padding: 0;
+  text-align: center;
+  align-content: center;
+ }
+
+ .footer-buttons {
+  width: 100px;
+  padding: 0.8em 1em;
+  margin: 0;
+ }
+
+ .streaming-services-box {
+  padding: 20px 40px;
+  height: 300px;
+  }
+}
+
+@media (min-width: 375px) {
+ .footer-buttons {
+  margin: 0 5px 0 5px;
+ }
+}
+
+@media (max-width: 375px) {
+ .song-panel-top-right {
+  margin-top: -5px;
+ }
+ .streaming-services-box {
+  height: auto;
+ }
+}
+
+@media (min-width: 767px) {
+ .footer-socials {
+  margin: 40px 10px 50px 10px;
+  }
+ .streaming-services-apps {
+    margin: 20px;
+ }
+ .song-panel-whole {
+    margin-left: 10px;
+ }
+}
+
+@media (max-width: 767px) {
+ .email-submit-box {
+  margin: 20px;
+  }
+ .choose-music-service {
+  width: 60%;
+  margin: 10px 5px 10px 10px;
+  font-size: 1.2vh;
+ }
+ .back-to-all-music {
+  width: 70%;
+  margin-right: 10px;
+ }
+ .song-buttons {
+  font-size: 1.2vh;
+ }
+ .song-panel {
+  margin-top: -50px;
+ }
+ .song-panel-whole {
+  margin-top: -40px;
+ }
+ .metta-cd-animation {
+  display: none;
+ }
+}
+
+@media (min-height: 766px) {
+ .songs-header {
+  font-size: 3vh;
+ }
+}
+
+@media (min-height: 1000px) {
+  .choose-music-service {
+  margin-top: 40px;
+  }
+}
