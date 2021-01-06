@@ -192,20 +192,23 @@ li.fades {
   width: 100%;
   height: auto;
   padding: 25px;
-  margin: 0 0 80px 0;
+  margin: 0 0 150px 0;
 }
 
-.jumbo-button {  
- letter-spacing: 1.9px;
-  border: 0.1px solid rgb(255, 255, 255, 0.4);
+.jumbo-button {
   color: white;
+  text-decoration: none;
+  font-size: 1.7vh;
+  border: solid 0.1px white;
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.6);
   padding: 8px 25px;
   font-size: 14px;
+  letter-spacing: 1px;
 }
 
 .jumbo-button:hover {
-  color: white;
-  text-decoration: none;
+border: solid 0.08px black;
+color: white;
 }
 
 /*-------------------------------Latest Releases*/
@@ -228,7 +231,7 @@ li.fades {
 .albumcover img {
   height: auto;
   width: 100%;
-  max-width: 600px;
+  max-width: 550px;
   margin: 30px 30px 60px 30px;
   box-shadow: 5px 5px 9px #310009; 
 }
@@ -323,6 +326,7 @@ li.fades {
   position: relative;
   margin: 10px 0 10px 0;
   text-align: center;
+  cursor: default;
 }
 
 .music-services-top-area {
@@ -650,6 +654,48 @@ font-size: 20px;
   opacity: 1;
 }
 
+/* Rectangle Out - Ian Lunn Hover Effects*/ 
+
+.hvr-rectangle-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: transparent;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-rectangle-out:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-rectangle-out:hover, .hvr-rectangle-out:focus, .hvr-rectangle-out:active {
+  color: white;
+}
+.hvr-rectangle-out:hover:before, .hvr-rectangle-out:focus:before, .hvr-rectangle-out:active:before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+
 /*---------------------------------- Submit Email*/
 
 .email-submit-zone {
@@ -665,9 +711,9 @@ font-size: 20px;
 }
 
 .email-submit-box {
-  margin: 40px 80px;
+  margin: 60px 80px;
   color: #D81B60;
-  border: 0.1px solid rgb(216, 27, 96, 0.4 );
+  border: 0.2px solid rgb(216, 27, 96, 0.3 );
   padding: 20px;
   font-size: 20px;
   font-weight: 500;
@@ -676,7 +722,7 @@ font-size: 20px;
 
 .email-input {
   color: #D81B60;
-  border-width: 0 0 1px 0;
+  border-width: 0 0 0.2px 0;
 }
 
 .submit-button {
@@ -688,6 +734,7 @@ font-size: 20px;
   font-size: 12px;
   font-weight: 500;
   margin: 0 18px 0 23px;
+  cursor: pointer;
 }
 
 .sent-button {
@@ -700,6 +747,13 @@ font-size: 20px;
   font-weight: 500;
   margin: 0 18px 0 23px;
   box-shadow: 1px 1px 6px #D81B60; 
+  cursor: pointer;
+}
+
+.form-control {
+ background: transparent;
+ border-bottom: 0.8px solid #D81B60;
+ padding: 0;
 }
 
 .terms-button {
@@ -710,6 +764,7 @@ font-size: 20px;
   font-size: 14px;
   border: none;
   background: transparent;
+  cursor: pointer;
 }
 
 .collapse {
@@ -771,14 +826,14 @@ font-size: 20px;
 }
 
 .footer-buttons:hover {
-    background: linear-gradient(124deg,#ff8a00,#e52e71);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
-    text-shadow: none;
-    border: hidden;
+  background: linear-gradient(124deg,#ff8a00,#e52e71);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  text-shadow: none;
+  border: hidden;
 }
 
 .copyright {
@@ -944,7 +999,7 @@ margin-bottom: 10px;
 
 @media (max-width: 767px) {
  .email-submit-box {
-  margin: 20px;
+  margin: 20px 20px 50px 20px;
   }
  .choose-music-service {
   width: 60%;
