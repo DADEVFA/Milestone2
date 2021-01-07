@@ -298,6 +298,7 @@ color: white;
   display: inline-block;
   position: relative;
   text-align: center;
+  cursor: pointer;
 }
 
 .song-buttons:hover {
@@ -422,6 +423,7 @@ box-shadow: 2px 4px 6px rgb(0, 0, 0, 0.3);
   transform-style: preserve-3d;
   color: white;
   position: relative;
+  cursor: pointer;
 }
 
 .metta-cd-animation {
@@ -854,8 +856,9 @@ margin-bottom: 10px;
 .share-menu {
   position:relative;
   display: inline;
-
+  cursor: pointer;
 }
+
 .share-menu .share-btn {
   position:absolute;
   z-index:2;
@@ -1025,6 +1028,8 @@ margin-bottom: 10px;
   font-size: 14px;
   font-family: "Raleway";
 }
+
+/*---------------------------------- Overwriting Styles */
 
 /*---------------------------------- Screensize*/
 

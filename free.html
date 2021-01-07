@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M E T T A</title>
+<meta property="og:url"           content="https://www.mettaofficial.com" />
+<meta property="og:type"          content="website" />
+<meta property="og:title"         content="METTA" />
+<meta property="og:description"   content="Music by METTA" />
+<meta property="og:image"         content="/assets/images/albumcovers/METTA-Free.jpg"/>
     
     <link 
         rel="stylesheet" 
@@ -30,12 +35,14 @@
     <script 
         src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
     ></script>
+
 <!-- Facebook Pixel Code -->
 
 <!-- End Facebook Pixel Code -->
 </head>
 
 <body>
+
 
 <!-- Navigation -->
 
@@ -100,7 +107,6 @@
                                 height="100" 
                                 scrolling="no" 
                                 frameborder="no" 
-                                allow="autoplay" 
                                 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/867936589&color=%2323282a&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
                                 </iframe>
                                 <div 
@@ -120,30 +126,28 @@
                                              data-target="#play-button">
                                             PREVIEW
                                         </div>
-                            <div class="share-menu">  
+                                    <div class="share-menu">  
                                             <div class="song-buttons share-button hvr-outline-in" onclick="toggleShareMenu()">
                                                 SHARE
                                             </div>
-                                        <div class="social-btn hvr-float-shadow">
-                                            <i class="fab fa-facebook"></i>
+                                            
+                                        <div id="fb" class="social-btn hvr-float-shadow">
+                                        <i class="fab fa-facebook"></i>
                                         </div>
-                                        <div class="social-btn hvr-float-shadow">
+                                        <div id="tw" class="social-btn hvr-float-shadow">
                                             <i class="fab fa-twitter"></i>
                                         </div>
-                                        <div class="social-btn hvr-float-shadow">
-                                            <i class="fab fa-instagram"></i>
-                                        </div>
-                                        <div class="social-btn hvr-float-shadow">
+                                        <div id="" class="social-btn hvr-float-shadow">
                                             <i class="fab fa-facebook-messenger"></i>
                                         </div>
-                                        <div class="social-btn hvr-float-shadow">
+                                        <div id="wts" class="social-btn hvr-float-shadow">
                                             <i class="fab fa-whatsapp"></i>
                                         </div>
-                                        <div class="social-btn hvr-float-shadow">
+                                        <div id="" class="social-btn hvr-float-shadow">
                                             <i class="fas fa-share"></i>
                                         </div>
                                         </div>
-                            </div>
+                                    </div>
     
                                     </div>
                                 </div>
@@ -352,6 +356,9 @@
     <script src="/assets/js/navigation.js"></script>
     <script 
         src="/assets/js/main.js"
+    ></script>
+    <script 
+        src="/assets/js/shareSocials.js"
     ></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

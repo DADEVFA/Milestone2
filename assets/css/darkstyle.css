@@ -857,8 +857,9 @@ margin-bottom: 10px;
 .share-menu {
   position:relative;
   display: inline;
-
+  cursor: pointer;
 }
+
 .share-menu .share-btn {
   position:absolute;
   z-index:2;
