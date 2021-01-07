@@ -15,6 +15,14 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_1U20LHdmQHgmC98jlc13y");
+        })();
+    </script>
+
     <!-- Facebook Pixel Code -->
 
     <!-- End Facebook Pixel Code -->
@@ -45,47 +53,46 @@
 
     <!-- Form-->
 
-	<div class="container-wrapper ">
-		<div class="container contact-frame">
+    <div class="container-wrapper ">
+        <div class="container contact-frame">
             <h2 class="index-songs-header">Contact METTA</h2>
-                <form class="contact-form">
-                    <div class="formstyle">
-                        <label for="Form-Email" class="contact-text specialfont">
-                            EMAIL ADDRESS:
-                        </label>
-                            <input 
-                                type="email" 
-                                class="inside-form" 
-                                id="Form-Email" 
-                                placeholder="name@example.com" 
-                                required>
-                    </div>
-                        <div class="formstyle">
-                            <label for="Form-Subject" class="contact-text specialfont">
-                                SUBJECTS:
-                            </label>
-                                <select class="inside-form" id="Form-Subject">
-                                    <option>Anything & Everything</option>
-                                    <option>Info</option>
-                                    <option>Bookings</option>
-                                    <option>Pr / Media</option>
-                                </select>
-                        </div>
-                        <div class="formstyle">
-                            <label for="Form-Message" class="contact-text specialfont">YOUR MESSAGE:</label>
-                            <textarea 
-                                    class="inside-form" 
-                                    id="Form-Message" 
-                                    required></textarea>
-                        </div>
-                                <button type="submit" class="send-message-button hvr-float-shadow">
-                                    SEND
-                                </button>
-                    </form>
+            <form name="contactForm" id="contactForm" class="contact-form" onsubmit="return sendMail(this);">
+                <div class="formstyle">
+                    <label for="fullname" class="contact-text specialfont">
+                        NAME:
+                    </label>
+                    <input type="text" name="name" class="inside-form" id="fullname" required>
+                </div>
+                <div class="formstyle">
+                    <label for="Form-Email" class="contact-text specialfont">
+                        EMAIL ADDRESS:
+                    </label>
+                    <input type="email" name="emailaddress" class="inside-form" id="Form-Email"
+                        placeholder="name@example.com" required>
+                </div>
+                <div class="formstyle">
+                    <label for="Form-Subject" class="contact-text specialfont">
+                        SUBJECTS:
+                    </label>
+                    <select name="subject" class="inside-form" id="Form-Subject">
+                        <option>Anything, Everything</option>
+                        <option>Info</option>
+                        <option>Bookings</option>
+                        <option>Pr and Media</option>
+                    </select>
+                </div>
+                <div class="formstyle">
+                    <label for="Form-Message" class="contact-text specialfont">YOUR MESSAGE:</label>
+                    <textarea class="inside-form" name="message" id="Form-Message" required></textarea>
+                </div>
+                <button type="submit" form="contactForm" class="send-message-button hvr-float-shadow">
+                    SEND
+                </button>
+            </form>
         </div>
     </div>
-    
-<!-- /.Form-->
+
+    <!-- /.Form-->
 
     <!-- Footer -->
 
@@ -130,7 +137,7 @@
     </div>
 
     <!-- /.Footer-->
-
+    <script src="/assets/js/sendEmail.js"></script>
     <script src="/assets/js/navigation.js"></script>
     <script src="/assets/js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

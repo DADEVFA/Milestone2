@@ -954,7 +954,7 @@ margin-bottom: 10px;
   padding: 20px;
   background: transparent;
   color: black;
-  box-shadow: 3px 3px 9px gray;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.35);
   margin-bottom: 80px;
 }
 
@@ -966,7 +966,7 @@ margin-bottom: 10px;
 }
 
 .send-message-button {
-  margin: 50px 0;
+  margin: 50px 10px;
   width: 80px;
   background: transparent;
   border: 0.3px solid rgba(192, 89, 127, 0.6);
@@ -978,6 +978,7 @@ margin-bottom: 10px;
   display: inline-block;
   position: relative;
   line-height: 1.15384615;
+  cursor: pointer;
 }
 
 .formstyle {
@@ -986,7 +987,7 @@ margin-bottom: 10px;
 }
 
 .inside-form {
-border-bottom: 0.3px solid #D81B60;
+ border-bottom: 0.3px solid #D81B60;
  border-top: none;
   border-left: none;
   border-right: none;
@@ -1012,6 +1013,7 @@ border-bottom: 0.3px solid #D81B60;
   line-height: 30px;
   font-size: 14px;
   font-family: "Raleway";
+  cursor: pointer;
 }
 
 #Form-Email {
