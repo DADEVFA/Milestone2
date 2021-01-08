@@ -382,6 +382,7 @@ box-shadow: 2px 4px 6px rgb(0, 0, 0, 0.3);
   transform-style: preserve-3d;
   justify-content: center;
   position: relative;
+  margin-right: 30px;
 }
 
 .song-artwork img {
@@ -424,6 +425,8 @@ box-shadow: 2px 4px 6px rgb(0, 0, 0, 0.3);
   color: white;
   position: relative;
   cursor: pointer;
+  top: 0;
+  left: 0;
 }
 
 .metta-cd-animation {
@@ -1117,8 +1120,13 @@ margin-bottom: 10px;
  } 
 }
 
+@media (min-height: 766px) {
+ .songs-header {
+  font-size: 3vh;
+ }
+}
 
-@media (max-width: 767px) {
+@media (max-width: 766px) {
  .email-submit-box {
   margin: 20px 20px 50px 20px;
   }
@@ -1143,16 +1151,37 @@ margin-bottom: 10px;
  .metta-cd-animation {
   display: none;
  }
+ .song-artwork:hover .top-img-albumcover {
+  left: auto;
 }
 
-@media (min-height: 766px) {
- .songs-header {
-  font-size: 3vh;
+.song-artwork:hover .preview-box {
+  left: auto;
+}
+
+.song-artwork:hover .play-button-box {
+  display: none;
+}
+
+.preview-text:hover {
+  display: hidden;
+}
+
+ .song-panel-whole .song-artwork:hover {
+  left: auto;
  }
 }
 
+
 @media (min-height: 1000px) {
-  .choose-music-service {
+ .choose-music-service {
   margin-top: 40px;
   }
 }
+
+@media (max-width: 1200px) {
+ .song-artwork{
+  margin-right: 0;
+ }
+}
+
