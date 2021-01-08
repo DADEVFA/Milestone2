@@ -203,13 +203,13 @@ li.fades {
   border: solid 0.1px white;
   text-shadow: 1px 2px rgba(0, 0, 0, 0.6);
   padding: 8px 25px;
-  font-size: 14px;
   letter-spacing: 1px;
 }
 
 .jumbo-button:hover {
 border: solid 0.08px black;
-color: white;
+color: black;
+box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /*-------------------------------Latest Releases*/
@@ -747,6 +747,10 @@ font-size: 20px;
   cursor: pointer;
 }
 
+.submit-button:hover {
+  color: #963CAA;
+}
+
 .sent-button {
   background: transparent;
   letter-spacing: 1px;
@@ -756,6 +760,7 @@ font-size: 20px;
   font-size: 12px;
   font-weight: 500;
   margin: 0 18px 0 23px;
+  box-shadow: 2px 2px 4px #963CAA; 
   cursor: pointer;
 }
 
