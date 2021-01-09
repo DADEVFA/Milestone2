@@ -4,27 +4,27 @@ function myFunction() {
     var btn = document.getElementById("submit-button");
 
     if (btn.value == "Submit") {
-            btn.value = "Sent"
-            btn.innerHTML = "Sent";
-            document.getElementById("submit-button"). className = "sent-button"; 
+        btn.value = "Sent"
+        btn.innerHTML = "Sent";
+        document.getElementById("submit-button").className = "sent-button";
     } else {
-                btn.value = "Submit";
-                btn.innerHTML = "Submit";
-                document.getElementById("submit-button"). className = "submit-button";
-            }
+        btn.value = "Submit";
+        btn.innerHTML = "Submit";
+        document.getElementById("submit-button").className = "submit-button";
+    }
 }
 
 
 //Terms button Collapses with content and changes to "Close Terms" 
-    $(document).ready(function(){
+$(document).ready(function () {
 
-            $("#terms").on("hide.bs.collapse", function(){
-            $(".terms-button").html('Terms');
-        });
-            $("#terms").on("show.bs.collapse", function(){
-            $(".terms-button").html('Close Terms');
-        });
+    $("#terms").on("hide.bs.collapse", function () {
+        $(".terms-button").html('Terms');
     });
+    $("#terms").on("show.bs.collapse", function () {
+        $(".terms-button").html('Close Terms');
+    });
+});
 
 
 //Animation for Hamburger + No Scrolling Menu" 
@@ -32,35 +32,57 @@ function myFunction() {
 const menuIcon = document.querySelector(".hamburger");
 
 menuIcon.addEventListener("click", () => {
-  menuIcon.classList.toggle("changelines");
-  // No Scroll in Menu function"
-  let fix = document.querySelector("body");
-  fix.classList.toggle("fixed-menu")
+    menuIcon.classList.toggle("changelines");
+    // No Scroll in Menu function"
+    let fix = document.querySelector("body");
+    fix.classList.toggle("fixed-menu")
 });
 
 
 //Animation for share button" 
 
-function toggleShareMenu(){
-  document.getElementsByClassName("share-menu")
-  [0].classList.toggle("active");
+function toggleShareMenu() {
+    document.getElementsByClassName("share-menu")
+    [0].classList.toggle("active");
 }
 
 //Play changes to ArrowDown function with collapse " 
 
-    $(document).ready(function(){
+$(document).ready(function () {
 
-            $("#play-button").on("hide.bs.collapse", function(){
-            $(".play-button-box").html('<i class="far fa-play-circle"></i>');
-        });
-            $("#play-button").on("show.bs.collapse", function(){
-            $(".play-button-box").html('<i class="far fa-arrow-alt-circle-down"></i>');
-        });
+    $("#play-button").on("hide.bs.collapse", function () {
+        $(".play-button-box").html('<i class="far fa-play-circle"></i>');
     });
+    $("#play-button").on("show.bs.collapse", function () {
+        $(".play-button-box").html('<i class="far fa-arrow-alt-circle-down"></i>');
+    });
+});
 
 
 //Switch CSS Stylesheet Manually" 
 
-    function switchStyle(theme) {
-        document.getElementById('switchcss').setAttribute('href', theme);
-    };
+function switchStyle() {
+
+    //Dark vs Bright mode" 
+    let darkMode = "./assets/css/darkstyle.css";
+    let brightMode = "./assets/css/style.css";
+
+    //Button" 
+    var switchcss = document.getElementById("theme-switcher");
+
+
+    //If button is Dark MODE" 
+    if (switchcss.innerHTML == "DARK MODE") {
+        switchcss.value = "BRIGHT MODE";
+        switchcss.innerHTML = "BRIGHT MODE";
+        document.getElementById('switchcss').setAttribute('href', darkMode);
+
+    } else {
+    //If button is Dark MODE" 
+        (switchcss.innerHTML == "BRIGHT MODE"); {
+            switchcss.value = "DARK MODE";
+        switchcss.innerHTML = "DARK MODE";
+            document.getElementById('switchcss').setAttribute('href', brightMode);
+        }
+    }
+}

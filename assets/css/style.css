@@ -59,6 +59,7 @@ nav {
   transition: all 2s ease-in-out;
   z-index: 1;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 
 .menu-button:hover {
@@ -884,7 +885,7 @@ margin-bottom: 10px;
   transform:translate(-50%,-50%);
   width:0;
   height:0;  
-  cursor:pointer;
+  cursor: pointer;
   text-align:center;
   line-height:75px;
   font-size:0px;
@@ -897,7 +898,7 @@ margin-bottom: 10px;
   left:-160%;
   transform:translate(-50%,-100%);
   transition:all 300ms ease-in-out 450ms;
-  width: 50px;
+  width: 50px; 
   height: 50px;
   font-size: 23px;
   line-height: 50%;
