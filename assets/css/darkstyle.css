@@ -169,6 +169,8 @@ li.fades {
   background-size: 500%, 400%;
   position: relative;
   animation: change 35s ease-in-out infinite;
+  box-shadow: 0 3px 12px black;
+
 }
 
 @keyframes change {
@@ -203,10 +205,11 @@ li.fades {
   color: white;
   text-decoration: none;
   font-size: 1.7vh;
-  border: solid 0.1px white;
-  text-shadow: 1px 2px rgba(0, 0, 0, 0.6);
+  border: solid 0.1px black;
+  text-shadow: 1px 2px black;
   padding: 8px 25px;
   letter-spacing: 1px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .jumbo-button:hover {

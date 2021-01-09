@@ -170,6 +170,7 @@ li.fades {
   background-size: 500%, 400%;
   position: relative;
   animation: change 35s ease-in-out infinite;
+  box-shadow: 0 3px 9px gray;
 }
 
 @keyframes change {
