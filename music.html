@@ -12,7 +12,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;600;700;800;900&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://use.typekit.net/fxb1rpu.css">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link 
+        id="switchcss"
+        rel="stylesheet" 
+        href="assets/css/style.css" 
+        type="text/css"/>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Facebook Pixel Code -->
@@ -38,6 +42,7 @@
             <li><a class="menu-button hvr-float-shadow" href="index.html">HOME</a></li>
             <li><a class="menu-button hvr-float-shadow" href="music.html">MUSIC</a></li>
             <li><a class="menu-button hvr-float-shadow" href="contact.html">CONTACT</a></li>
+            <li><a id="theme-switcher" class="menu-button hvr-float-shadow" onclick="switchStyle()">DARK MODE</a></li>
         </ul>
     </nav>
 

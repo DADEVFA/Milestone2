@@ -118,6 +118,7 @@ nav {
 }
 .nav-links li:nth-child(4) {
   transition: all 0.7s ease 0.98s;
+  color: white;
 }
 
 li.fades {
