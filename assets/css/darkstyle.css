@@ -52,7 +52,7 @@ nav {
   background: linear-gradient(-55deg, #8d30a1, #ce5834, #8d30a1, #d33f50);
   background-size: 500%, 400%;
   animation: change 35s ease-in-out infinite;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   flex-direction: column;
   clip-path: circle(1px at 90% -1%);
@@ -277,14 +277,15 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 .songs-header {
   color: rgb(150, 60, 170);
   font-weight:400;
-  font-size: 3vh;
+  font-size: 30px;
   text-align: left;
   font-family: "Raleway";
+  left: 0;
 }
 
 .track-artists {
   color: white;
-  font-size: 2.8vh;
+  font-size: 25px;
 }
 
 .song-panel-top-right {
@@ -295,12 +296,12 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .song-buttons {
-  width: 40%;
+  width: 48%;
   background: transparent;
   border: 0.2px solid rgba(150, 60, 170, 0.3);
   color: #963CAA;
   padding: 0.8em 1em;
-  font-size: 1.1vh;
+  font-size: 12px;
   letter-spacing: 0.1px;
   font-weight: 600;
   position: relative;
@@ -328,7 +329,7 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   border: 0.2px solid rgba(150, 60, 170, 0.3);
   color: #963CAA;
   padding: 0.8em 1em;
-  font-size: 1.1vh;
+  font-size: 12px;
   letter-spacing: 0.1px;
   font-weight: 600;
   position: relative;
@@ -416,6 +417,7 @@ box-shadow: 2px 4px 6px rgb(0, 0, 0, 0.3);
   cursor: pointer;
   top: 0;
   left: 0;
+  transition: all 0.5s ease-in-out;
 }
 
 .metta-cd-animation {
@@ -436,6 +438,7 @@ box-shadow: 2px 4px 6px rgb(0, 0, 0, 0.3);
   top: 0;
   left: 0;
   z-index: 1;
+  transition: all 1s ease-in-out;
 }
 
 .second-img-cd {
@@ -444,23 +447,22 @@ box-shadow: 2px 4px 6px rgb(0, 0, 0, 0.3);
   height: auto;
   top: 0;
   left: 0;
+  transition: all 1s ease-in-out;
 }
 
 .song-artwork:hover .top-img-albumcover {
   transition: all 1s ease-in-out;
-  left: -100px;
+  left: -70px;
+}
+
+.song-artwork:hover .second-img-cd {
+  transition: all 1s ease-in-out;
+  left: +30px;
 }
 
 .song-artwork:hover .preview-box {
   transition: all 1s ease-in-out;
-  left: -100px;
-}
-
-.preview-text {
-transition: all 1s ease-in-out;
-margin-top: 30px;
-margin-left: 10px;
-font-size: 20px;
+  left: -70px;
 }
 
 .song-panel-whole .song-artwork:hover {
@@ -1034,17 +1036,21 @@ margin-bottom: 10px;
   text-align: center;
   align-content: center;
  }
-
  .footer-buttons {
   width: 100px;
   padding: 0.8em 1em;
   margin: 0;
  }
-
  .streaming-services-box {
   padding: 20px 40px;
   height: 300px;
   }
+ .songs-header {
+  font-size: 24px;
+ }
+ .track-artists {
+  font-size: 20px;
+ }
 }
 
 @media (min-width: 375px) {
@@ -1065,9 +1071,6 @@ margin-bottom: 10px;
 }
 
 @media (max-width: 375px) {
- .song-panel-top-right {
-  margin-top: -5px;
- }
  .streaming-services-box {
   height: auto;
  }
@@ -1103,7 +1106,7 @@ margin-bottom: 10px;
 
 @media (min-height: 766px) {
  .songs-header {
-  font-size: 3vh;
+  font-size: 30px;
  }
 }
 
@@ -1112,16 +1115,16 @@ margin-bottom: 10px;
   margin: 20px 20px 50px 20px;
   }
  .choose-music-service {
-  width: 60%;
-  margin: 10px 5px 10px 10px;
-  font-size: 1.2vh;
+  width: 75%;
+  margin: 10px 0 10px 10px;
+  font-size: 10px;
  }
  .back-to-all-music {
   width: 70%;
   margin-right: 10px;
  }
  .song-buttons {
-  font-size: 1.2vh;
+  font-size: 10px;
  }
  .song-panel {
   margin-top: -50px;
