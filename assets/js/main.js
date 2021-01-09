@@ -26,7 +26,6 @@ $(document).ready(function () {
     });
 });
 
-
 //Animation for Hamburger + No Scrolling Menu" 
 
 const menuIcon = document.querySelector(".hamburger");
@@ -45,19 +44,6 @@ function toggleShareMenu() {
     document.getElementsByClassName("share-menu")
     [0].classList.toggle("active");
 }
-
-//Play changes to ArrowDown function with collapse " 
-
-$(document).ready(function () {
-
-    $("#play-button").on("hide.bs.collapse", function () {
-        $(".play-button-box").html('<i class="far fa-play-circle"></i>');
-    });
-    $("#play-button").on("show.bs.collapse", function () {
-        $(".play-button-box").html('<i class="far fa-arrow-alt-circle-down"></i>');
-    });
-});
-
 
 //Switch CSS Stylesheet Manually" 
 
@@ -78,11 +64,11 @@ function switchStyle() {
         document.getElementById('switchcss').setAttribute('href', darkMode);
 
     } else {
-    //If button is Dark MODE" 
+        //If button is Dark MODE" 
         (switchcss.innerHTML == "BRIGHT MODE"); {
             switchcss.value = "DARK MODE";
-        switchcss.innerHTML = "DARK MODE";
+            switchcss.innerHTML = "DARK MODE";
             document.getElementById('switchcss').setAttribute('href', brightMode);
-        }
+        } 
     }
 }
