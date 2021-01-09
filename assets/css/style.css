@@ -115,9 +115,14 @@ nav {
 .nav-links li:nth-child(3) {
   transition: all 0.7s ease 0.9s;
 }
+.nav-links li:nth-child(4) {
+  transition: all 0.7s ease 0.98s;
+}
+
 li.fades {
   opacity: 1;
 }
+
 
 .metta-logo {
   position: absolute;

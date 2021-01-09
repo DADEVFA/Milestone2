@@ -57,3 +57,10 @@ function toggleShareMenu(){
             $(".play-button-box").html('<i class="far fa-arrow-alt-circle-down"></i>');
         });
     });
+
+
+//Switch CSS Stylesheet Manually" 
+
+    function switchStyle(theme) {
+        document.getElementById('switchcss').setAttribute('href', theme);
+    };
