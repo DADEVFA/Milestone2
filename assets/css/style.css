@@ -868,8 +868,8 @@ margin-bottom: 10px;
 }
 
 .share-menu.active div:nth-child(2){
-  top:450%;
-  left:-160%;
+  top:420%;
+  left:-110%;
   transform:translate(-50%,-100%);
   transition:all 300ms ease-in-out 450ms;
   width: 50px; 
@@ -879,8 +879,8 @@ margin-bottom: 10px;
 }
 
 .share-menu.active div:nth-child(3){
-  top:450%;
-  left:-110%;
+  top:420%;
+  left:-60%;
   transform:translate(-50%,-100%);
   transition:all 300ms ease-in-out 400ms;
   width: 50px;
@@ -890,8 +890,8 @@ margin-bottom: 10px;
 }
 
 .share-menu.active div:nth-child(4){
-  top:450%;
-  left:-60%;
+  top:420%;
+  left:-10%;
   transform:translate(-50%,-100%);
   transition:all 300ms ease-in-out 290ms;
   width: 50px;
@@ -901,8 +901,8 @@ margin-bottom: 10px;
 }
 
 .share-menu.active div:nth-child(5){
-  top:450%;
-  left:-10%;
+  top:420%;
+  left:40%;
   transform:translate(-50%,-100%);
   transition:all 300ms ease-in-out 190ms;
   width: 50px;
@@ -911,9 +911,13 @@ margin-bottom: 10px;
   line-height: 50%;
 }
 
+#mail-btn {
+ color: #ff8a00;
+}
+
 .share-menu.active div:nth-child(6){
-  top:450%;
-  left:40%;
+  top:420%;
+  left:90%;
   transform:translate(-50%,-100%);
   transition:all 300ms ease-in-out 100ms;
   width: 50px;
@@ -923,7 +927,7 @@ margin-bottom: 10px;
 }
 
 .share-menu.active div:nth-child(7){
-  top:450%;
+  top:420%;
   left:90%;
   transform:translate(-50%,-100%);
   transition:all 300ms ease-in-out 20ms;
@@ -951,7 +955,7 @@ margin-bottom: 10px;
 
 .contact-text {
   color: #D81B60;
-  font-size: 1.6vh;
+  font-size: 14px;
   margin-top: 10px;
   text-align: left;
 }
@@ -963,7 +967,7 @@ margin-bottom: 10px;
   border: 0.3px solid rgba(192, 89, 127, 0.6);
   color: #D81B60;
   padding: 0.8em 1em;
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: 0.2px;
   font-weight: 600;
   display: inline-block;
@@ -978,11 +982,16 @@ margin-bottom: 10px;
 }
 
 .inside-form {
- border-bottom: 0.3px solid #D81B60;
- border-top: none;
+  border-bottom: 0.3px solid #D81B60;
+  border-top: none;
   border-left: none;
   border-right: none;
   width: 100%;
+}
+
+.formstyle button, input, optgroup, select, textarea{
+background-color: transparent;
+color: black;
 }
 
 #Form-Message {
@@ -1041,7 +1050,7 @@ margin-bottom: 10px;
  }
  .streaming-services-box {
   padding: 20px 40px;
-  height: 300px;
+  height: 320px;
   }
  .songs-header {
   font-size: 24px;
