@@ -45,30 +45,55 @@ function toggleShareMenu() {
     [0].classList.toggle("active");
 }
 
-//Switch CSS Stylesheet Manually" 
+
+
+// Manual and Automatic function for CSS change"
+
+// Get time" 
+var day = new Date();
+var hour = day.getHours();
+// Night vs Day mode" 
+let nightMode = "./assets/css/darkstyle.css";
+let dayMode = "./assets/css/style.css";
+// Target Switch button"
+let switchcss = document.getElementById("theme-switcher");
 
 function switchStyle() {
 
-    //Dark vs Bright mode" 
-    let darkMode = "./assets/css/darkstyle.css";
-    let brightMode = "./assets/css/style.css";
-
-    //Button" 
-    var switchcss = document.getElementById("theme-switcher");
-
-
-    //If button is Dark MODE" 
-    if (switchcss.innerHTML == "DARK MODE") {
-        switchcss.value = "BRIGHT MODE";
-        switchcss.innerHTML = "BRIGHT MODE";
-        document.getElementById('switchcss').setAttribute('href', darkMode);
-
+    // Check darkmode status" 
+    if (localStorage.getItem('DARK_MODE') == "off" || localStorage.getItem('DARK_MODE') == "" || localStorage.getItem('DARK_MODE') == null) {
+        switchcss.innerHTML = "DARK MODE";
+//Darkmode is off" 
+        document.getElementById('switchcss').setAttribute('href', dayMode);
     } else {
-        //If button is Dark MODE" 
-        (switchcss.innerHTML == "BRIGHT MODE"); {
-            switchcss.value = "DARK MODE";
-            switchcss.innerHTML = "DARK MODE";
-            document.getElementById('switchcss').setAttribute('href', brightMode);
-        } 
+//Darkmode is on" 
+        document.getElementById('switchcss').setAttribute('href', nightMode);
+        switchcss.innerHTML = "BRIGHT MODE";
+        if (localStorage.getItem('DARK_MODE') == "") {
+// If darkmode is off, use css based on hour of day" 
+            if (hour >= 6 && hour <= 20) {
+                document.getElementById('switchcss').setAttribute('href', dayMode); btnSwitch();
+            } else if (hour > 20 && hour < 5) {
+                document.getElementById('switchcss').setAttribute('href', nightMode); btnSwitch();
+            }
+        }
     }
 }
+
+//Override CSS with theme switcher" 
+function btnSwitch() {
+
+//If CSS changes to Dark MODE set button to Bright MODE" 
+    if (switchcss.innerHTML == "DARK MODE") {
+        switchcss.innerHTML = "BRIGHT MODE";
+        document.getElementById('switchcss').setAttribute('href', nightMode);
+        localStorage.setItem("DARK_MODE", "on");
+
+    } else if (switchcss.innerHTML == "BRIGHT MODE") {
+        switchcss.innerHTML = "DARK MODE";
+        document.getElementById('switchcss').setAttribute('href', dayMode);
+        localStorage.setItem("DARK_MODE", "off");
+    }
+}
+
+switchStyle();
