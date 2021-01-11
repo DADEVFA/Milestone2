@@ -127,8 +127,10 @@ nav {
   transition: all 0.7s ease 0.98s;
   color: white;
 }
+
 li.fades {
   opacity: 1;
+  display: inline;
 }
 
 .metta-logo {
@@ -144,6 +146,12 @@ li.fades {
 .fixed-menu {
   overflow: hidden;
 }
+
+.hamburger:active .menu-button {
+pointer-events: all;
+cursor: pointer;
+}
+
 
 /*-------------------------------Hamburger Animation*/
 .changelines .line-1 {
