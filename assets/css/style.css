@@ -100,7 +100,7 @@ nav {
 .nav-links.open {
   clip-path: circle(9000px at 90% -1%);
   -webkit-clip-path: circle(9000px at 90% -1%);
-  }
+}
 
 .landing {
   flex-direction: column;
@@ -108,10 +108,7 @@ nav {
 .nav-links li {
   opacity: 0;
 }
-.nav ul li a {
-  font-size: 3vh;
-  z-index: 5;
-}
+
 .nav-links li:nth-child(1) {
   transition: all 0.7s ease 0.5s;
 }
