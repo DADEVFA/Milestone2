@@ -28,6 +28,13 @@
     <script 
         src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
     ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_1U20LHdmQHgmC98jlc13y");
+        })();
+    </script>
 <!-- Facebook Pixel Code -->
 
 <!-- End Facebook Pixel Code -->
@@ -110,22 +117,21 @@
                 Sign up, receive letters for new releases and much more.
             </p>
 
-                <form 
-                    class="inline" 
-                    onsubmit="return false">
+                <form name="fanForm" id="fanForm" class="inline" onsubmit="return sendMail(fanForm);">
                             <input
                                 type="email"
-                                class="form-control email-input"
-                                id="submit-email"
-                                name="submit-email"
+                                class="fan-form form-control email-input"
+                                id="E-Mail"
+                                name="email"
                                 placeholder="Your e-mail"
+                                required
                             />
                 <button 
                     type="submit" 
                     class="hvr-rectangle-out submit-button "
-                    onclick="myFunction()" 
                     id="submit-button" 
-                    value="Submit">
+                    value="Submit"
+                    form="fanForm">
                     Submit 
                 </button>
                 </form>
@@ -230,7 +236,7 @@
 </div>
 
 <!-- /.Footer-->
-
+    <script src="./assets/js/fanForm.js"></script>
     <script type="text/javascript" src="./assets/js/vanilla-tilt.js"></script>
     <script type="text/javascript">
 	VanillaTilt.init(document.querySelector(".albumcover"), {
