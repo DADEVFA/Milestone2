@@ -107,13 +107,13 @@ nav {
 .landing {
   flex-direction: column;
 }
+
 .nav-links li {
   opacity: 0;
+  pointer-events: none;
+  cursor: default;
 }
-.nav ul li a {
-  font-size: 3vh;
-  z-index: 5;
-}
+
 .nav-links li:nth-child(1) {
   transition: all 0.7s ease 0.5s;
 }
@@ -128,9 +128,11 @@ nav {
   color: white;
 }
 
-li.fades {
+li.fades{
   opacity: 1;
   display: inline;
+  pointer-events: fill;
+  cursor: pointer;
 }
 
 .metta-logo {
@@ -152,8 +154,8 @@ pointer-events: all;
 cursor: pointer;
 }
 
-
 /*-------------------------------Hamburger Animation*/
+
 .changelines .line-1 {
   transform: rotateZ(-405deg) translate(-8px, 4px);
 }

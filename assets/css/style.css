@@ -63,6 +63,7 @@ nav {
   transition: all 2s ease-in-out;
   z-index: 1;
   letter-spacing: 1px;
+  overflow: hidden;
 }
 
 .menu-button:hover {
@@ -103,8 +104,11 @@ nav {
 .landing {
   flex-direction: column;
 }
+
 .nav-links li {
   opacity: 0;
+  pointer-events: none;
+  cursor: default;
 }
 
 .nav-links li:nth-child(1) {
@@ -121,9 +125,11 @@ nav {
   color: white;
 }
 
-li.fades {
+li.fades{
   opacity: 1;
   display: inline;
+  pointer-events: fill;
+  cursor: pointer;
 }
 
 .metta-logo {
@@ -143,9 +149,10 @@ li.fades {
 .hamburger:active .menu-button {
 pointer-events: all;
 cursor: pointer;
-}
+} 
 
 /*-------------------------------Hamburger Animation*/
+
 .changelines .line-1 {
   transform: rotateZ(-405deg) translate(-8px, 4px);
 }
