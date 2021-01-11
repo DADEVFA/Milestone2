@@ -91,6 +91,7 @@
                         </div>
                         <div class="collapse" id="play-button">
                             <iframe 
+                                    id="preview-box"
                                     class="preview-box"
                                     src="https://open.spotify.com/embed/track/0480jjwGjY6pNZgon6Xuuj" 
                                     width="300" 
@@ -111,7 +112,9 @@
                                         <div class="song-buttons preview-button hvr-outline-in"
                                              data-toggle="collapse" 
                                              data-target="#play-button">
-                                            PREVIEW
+                                            <a href="#preview-box">
+                                                PREVIEW
+                                            </a>
                                         </div>
                                     <div class="share-menu">  
                                             <div class="song-buttons share-button hvr-outline-in" onclick="toggleShareMenu()">
