@@ -1,6 +1,7 @@
 body {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
   background: rgb(3, 3, 3, 0.9);
+ -webkit-text-size-adjust: none;
 }
 
 html {
@@ -11,6 +12,7 @@ html {
   font-family: reross-rectangular, sans-serif;
   font-weight: 400;
   font-style: normal;
+  -webkit-text-size-adjust: -120%;
 }
 
 
@@ -77,14 +79,21 @@ nav {
     box-decoration-break: clone;
 }
 
+.menu-button {
+padding: auto;
+width: 150px;
+height: 45px;
+text-align: center;
+box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
 .nav-links li a {
   color: white;
+  padding: 0.9em 0.2em 0.8em 0.2em;
   text-decoration: none;
-  font-size: 1.7vh;
+  font-size: 2vh;
   border: solid 0.1px white;
-  padding: 0.7em 1em;
   text-shadow: 1px 2px rgba(0, 0, 0, 0.6);
-  
 }
 
 .nav-links li a:hover{
@@ -316,9 +325,9 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   border: 0.2px solid rgba(150, 60, 170, 0.3);
   color: #963CAA;
   padding: 0.8em 1em;
-  font-size: 12px;
+  font-size: 11px;
   letter-spacing: 0.1px;
-  font-weight: 600;
+  font-weight: 400;
   position: relative;
   line-height: 1.15384615;
   display: inline-block;
@@ -339,14 +348,14 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .choose-music-service {
-  width: 60%;
+  width: 50%;
   background: transparent;
-  border: 0.2px solid rgba(150, 60, 170, 0.3);
+  border: 0.1px solid rgba(192, 89, 127, 0.2);
   color: #963CAA;
-  padding: 0.8em 1em;
-  font-size: 12px;
-  letter-spacing: 0.1px;
-  font-weight: 600;
+  padding: 0.9em 0.2em 0.8em 0.2em;
+  font-size: 11px;
+  letter-spacing: 0.2px;
+  font-weight: 400;
   position: relative;
   line-height: 1.15384615;
   display: inline-block;
@@ -1144,7 +1153,7 @@ color: white;
   margin: 20px 20px 50px 20px;
   }
  .choose-music-service {
-  width: 75%;
+  width: 50%;
   margin: 10px 0 10px 10px;
   font-size: 10px;
  }
