@@ -1,6 +1,6 @@
 body {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
--webkit-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
 }
 
 html {
@@ -69,28 +69,28 @@ nav {
 }
 
 .menu-button:hover {
-    background: linear-gradient(90deg,#ff8a00,#e52e71);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
+  background: linear-gradient(90deg,#ff8a00,#e52e71);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 .menu-button {
-padding: auto;
-width: 152px;
-height: 45px;
-text-align: center;
-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.6);
+  padding: auto;
+  width: 130px;
+  height: 45px;
+  text-align: center;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .nav-links li a {
   color: white;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 13px;
   border: solid 0.1px white;
-  padding: 10px 2px 5px 2px;
+  padding: 12px 2px 5px 2px;
   text-shadow: 1px 2px rgba(0, 0, 0, 0.6);
   vertical-align: center;
   text-align: center;
@@ -160,8 +160,8 @@ li.fades{
 }
 
 .hamburger:active .menu-button {
-pointer-events: all;
-cursor: pointer;
+  pointer-events: all;
+  cursor: pointer;
 } 
 
 /*-------------------------------Hamburger Animation*/
@@ -240,9 +240,9 @@ cursor: pointer;
 }
 
 .jumbo-button:hover {
-border: solid 0.08px black;
-color: black;
-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border: solid 0.08px black;
+  color: black;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /*-------------------------------Latest Releases*/
@@ -337,14 +337,14 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .song-buttons:hover {
-    background: linear-gradient(90deg,#ff8a00,#e52e71);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
-    text-shadow: none;
-    border: hidden;
+  background: linear-gradient(90deg,#ff8a00,#e52e71);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  text-shadow: none;
+  border: hidden;
 }
 
 .choose-music-service {
@@ -388,7 +388,7 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .streaming-services-box img {
-box-shadow: 2px 4px 6px rgb(0, 0, 0, 0.3); 
+  box-shadow: 2px 4px 6px rgb(0, 0, 0, 0.3); 
 }
 
 .streaming-services-apps {
@@ -771,9 +771,9 @@ color: #D81B60;
 }
 
 .form-control {
- background: transparent;
- border-bottom: 0.8px solid #D81B60;
- padding: 0;
+  background: transparent;
+  border-bottom: 0.8px solid #D81B60;
+  padding: 0;
 }
 
 .terms-button {
@@ -857,11 +857,11 @@ color: #D81B60;
 }
 
 .copyright {
-position: absolute;
-text-align: center;
-bottom: 0;
-width: 100%;
-margin-bottom: 10px;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .center {
@@ -1020,8 +1020,8 @@ margin-bottom: 10px;
 }
 
 .formstyle button, input, optgroup, select, textarea{
-background-color: transparent;
-color: black;
+  background-color: transparent;
+  color: black;
 }
 
 #Form-Message {
@@ -1124,9 +1124,9 @@ color: black;
   width: 125px;
   height: 35px;
  }
- .nav-links li a {
-  font-size: 14px;
-  padding: 6px 2px 5px 2px;
+.nav-links li a {
+  font-size: 10px;
+  padding: 9px 2px 5px 2px;
   margin-top: 30px;
   margin-bottom: -30px;
  }
@@ -1187,11 +1187,11 @@ color: black;
   left: auto;
 }
 
-.song-artwork:hover .preview-box {
+ .song-artwork:hover .preview-box {
   left: auto;
 }
 
-.preview-text:hover {
+ .preview-text:hover {
   display: hidden;
 }
 
