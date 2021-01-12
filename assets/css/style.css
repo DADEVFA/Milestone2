@@ -219,6 +219,7 @@ cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px 0px 30px 0px;
 }
 
 .gradient-logo img {
@@ -231,11 +232,11 @@ cursor: pointer;
 .jumbo-button {
   color: white;
   text-decoration: none;
-  font-size: 1.7vh;
+  font-size: 14px;
   border: solid 0.1px white;
   text-shadow: 1px 2px rgba(0, 0, 0, 0.6);
   padding: 8px 25px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 .jumbo-button:hover {
