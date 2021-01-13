@@ -521,10 +521,16 @@ color: #D81B60;
 .songs-header-library {
   color: rgb(216, 27, 96);
   font-weight:400;
-  font-size: 3vh;
+  font-size: 22px;
   text-align: left;
   font-family: "Raleway";
-  margin-top: 20px; 
+  margin-top: 18px; 
+}
+
+.music-library-header {
+  color: rgb(216, 27, 96);
+  margin: 70px 0 40px 0;
+  font-weight:400;
 }
 
 
@@ -805,6 +811,7 @@ color: #D81B60;
   font-size: 13px;
   color: rgb(216, 27, 96);
   position: relative;
+  box-shadow: 2px -12px 8px -15px gray;
 }
 
 .footer-socials {
@@ -974,6 +981,12 @@ color: #D81B60;
   width: 80%;
 }
 
+.contact-header {
+  color: rgb(216, 27, 96);
+  margin: 40px 0 40px 0;
+  font-weight:400;
+}
+
 .contact-form {
   text-align: left;
   padding: 20px;
@@ -1129,6 +1142,20 @@ color: #D81B60;
   padding: 9px 2px 5px 2px;
   margin-top: 30px;
   margin-bottom: -30px;
+ }
+}
+
+@media (max-width: 415px){
+.music-library img {
+  max-width: 400px;
+  margin: 10px 0 10px 0;
+ }
+ .music-library-header {
+  margin: 30px 0 10px 0;
+  font-size: 29px;
+ }
+ .music-library {
+  margin: 10px 10px 25px 10px;
  }
 }
 

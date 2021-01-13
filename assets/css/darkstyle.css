@@ -529,12 +529,17 @@ li.fades{
 .songs-header-library {
   color: rgb(150, 60, 170);
   font-weight:400;
-  font-size: 3vh;
+  font-size: 22px;
   text-align: left;
   font-family: "Raleway";
-  margin-top: 20px; 
+  margin-top: 18px; 
 }
 
+.music-library-header {
+  color: #963CAA;
+  margin: 70px 0 40px 0;
+  font-weight:400;
+}
 
 /* Float Shadow - Ian Lunn Hover Effects */
 
@@ -813,6 +818,7 @@ li.fades{
   font-size: 13px;
   color: rgb(150, 60, 170);
   position: relative;
+  box-shadow: 2px -12px 8px -15px gray; 
 }
 
 .footer-socials {
@@ -982,6 +988,12 @@ li.fades{
   width: 80%;
 }
 
+.contact-header {
+  color: #963CAA;
+  margin: 40px 0 40px 0;
+  font-weight: 400;
+}
+
 .contact-form {
   text-align: left;
   padding: 20px;
@@ -1134,6 +1146,20 @@ li.fades{
   padding: 9px 2px 5px 2px;
   margin-top: 30px;
   margin-bottom: -30px;
+ }
+}
+
+@media (max-width: 415px){
+.music-library img {
+  max-width: 400px;
+  margin: 10px 0 10px 0;
+ }
+ .music-library-header {
+  margin: 30px 0 10px 0;
+  font-size: 29px;
+ }
+ .music-library {
+  margin: 10px 10px 25px 10px;
  }
 }
 
