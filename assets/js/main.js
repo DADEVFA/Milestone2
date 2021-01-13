@@ -44,22 +44,22 @@ let switchcss = document.getElementById("theme-switcher");
 
 function switchStyle() {
 
-    // Check darkmode status" 
-    if (localStorage.getItem('DARK_MODE') == "off" || localStorage.getItem('DARK_MODE') == "" || localStorage.getItem('DARK_MODE') == null) {
-        switchcss.innerHTML = "DARK MODE";
-//Darkmode is off" 
-        document.getElementById('switchcss').setAttribute('href', dayMode);
-    } else {
-//Darkmode is on" 
+    // Check users prefered CSS status" 
+    if (localStorage.getItem("CSS") == "DARK") {
         document.getElementById('switchcss').setAttribute('href', nightMode);
+        // Menu button is ready for Bright Mode" 
         switchcss.innerHTML = "BRIGHT MODE";
-        if (localStorage.getItem('DARK_MODE') == "") {
-// If darkmode is off, use css based on hour of day" 
-            if (hour >= 6 && hour <= 20) {
-                document.getElementById('switchcss').setAttribute('href', dayMode); btnSwitch();
-            } else if (hour > 20 && hour < 5) {
-                document.getElementById('switchcss').setAttribute('href', nightMode); btnSwitch();
-            }
+    } if (localStorage.getItem("CSS") == "BRIGHT") {
+        //Bright Mode is on" 
+        document.getElementById('switchcss').setAttribute('href', dayMode);
+        // Menu button is ready for Dark Mode" 
+        switchcss.innerHTML = "DARK MODE";
+    } if (localStorage.getItem("CSS") == null || localStorage.getItem("CSS") == " ") {
+        // If User hasn't changed CSS manually, use css based on hour of day" 
+        if (hour >= 6 && hour <= 20) {
+            document.getElementById('switchcss').setAttribute('href', dayMode); 
+        } else if (hour > 20 && hour < 5) {
+            document.getElementById('switchcss').setAttribute('href', nightMode);
         }
     }
 }
@@ -67,16 +67,16 @@ function switchStyle() {
 //Override CSS with theme switcher" 
 function btnSwitch() {
 
-//If CSS changes to Dark MODE set button to Bright MODE" 
+    //If CSS changes to Dark MODE set button to Bright MODE" 
     if (switchcss.innerHTML == "DARK MODE") {
-        switchcss.innerHTML = "BRIGHT MODE";
-        document.getElementById('switchcss').setAttribute('href', nightMode);
-        localStorage.setItem("DARK_MODE", "on");
+        switchcss.innerHTML = "BRIGHT MODE",
+            document.getElementById('switchcss').setAttribute('href', nightMode),
+            localStorage.setItem("CSS", "DARK");
 
     } else if (switchcss.innerHTML == "BRIGHT MODE") {
-        switchcss.innerHTML = "DARK MODE";
-        document.getElementById('switchcss').setAttribute('href', dayMode);
-        localStorage.setItem("DARK_MODE", "off");
+        switchcss.innerHTML = "DARK MODE",
+            document.getElementById('switchcss').setAttribute('href', dayMode),
+            localStorage.setItem("CSS", "BRIGHT");
     }
 }
 
