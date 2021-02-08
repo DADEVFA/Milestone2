@@ -48,7 +48,7 @@ to music streaming services where their songs or albums are availabe.
 * Google Fonts - Fonts.
 * Adobe Typekit - Fonts.
 * Bootstrap v4.1.3 - For responsive layout & collapse functions.
-* jquery - Used for navigation bar.
+* jQuery - Used for navigation bar.
 * Font Awesome - Complements the design.  
 
 
@@ -125,60 +125,124 @@ Phone:
 <h1 align="center"><img src="./assets/images/readme/darkphone.jpg"/></h1>
 
 
-## Pages: 
+### Pages: 
 
-### Home:
+## Home:
+The homepage contains a gradient hero section that has some animation. 
+Big logo, and a call to action sending user to music library. 
+A "latest releases" directly under the hero section. 
+Followed by a signup for fan letters. 
 
-### Music:
+## Music:
+Artists music library. 
+All released material will end up here. 
 
-### Contact: 
+## Contact: 
+Simple contact page connected. 
+With special font active for extra futuristic look and feeling.
 
-### Free/Everything:
+## Free/Everything:
+Individual song page. Instead of the standard way of having streaming platforms
+lined up, we give the user a more futuristic feeling where they appear as apps. 
+Like they would on the users phone. Share functionality added here with a little for being able to
+save the URL, send or post on diffrent Social Medias, or forward the song through an email.
+Cool animation when hovering the album cover, clicking on it will activate a drop down 
+with a preview of the song. Same goes for pressing the preview button.
 
-### Overall:
+
+## Overall:
+Theme changes depending what time of the day it is, but only if the user hasn't changed the theme manually in menu.
+Navigation bar is behaving just as the hero section, and the menu background does the same.
+With some nice animation added when pressing the hamburger. Pressing the DarkMode/BrightMode button
+in menu, will change the background imidiately, so the user understands that the change is in place. 
+Footer contains all important social media links, with buttons, to go to top
+or to important pages. 
+
 
 ## Future features: 
+- Users emailaddresses should be sent to a database, and not to an emailaddress through email.js. 
+- A follow functionality for all social medias. 
+- Build an admin dashboard for the artist or manager for them to upload new releases with all
+links to streming services, add new services, album covers, titles and it will appear thereafter. 
+- Build a game on the site that matches the brand. Rockets and planets? The winner will recieve tickets to shows or products. 
 
 # Testing 
 
-## Tests on live version:
+## Tests on live version: 
 
-### Navigation Bar: 
-
+### Navigation Bar/Menu: 
+- Looks good on all devices. 
+- Works on all browsers.
+- Works on all pages.
+- All links in menu works correctly. 
+- The Theme Switch button works. 
+- Landscape mode is not perfect, but it does fullfill it's purpose. 
 
 ### Home: 
-
+- Looks good on all devices, and browsers.
+- Callout button works perfectly.
+- Latest releases has correct links.
+- Signing up for fanmails sends email to correct emailaddress. Button changes from Submit to Sent. 
+- Google thinks the font color for darkmode does not have the best contrast. Changing this would alter the design. Will try slightly brighter color.
+- All CSS and jQuery Hover effects work.
+- Hero section in landscape mode is not good. 
 
 ### Music: 
-
+- Looks good on all devices, and all browsers. 
+- User can see the diffrent released content in a minimalistic way. 
+- Hover effects work.
 
 ### Contact: 
+- Works fine. 
+- Might need a popup or animation to let user know it was successfully sent. 
+- Erase input fields when sent. 
 
 
 ### Free: 
-
+- Looks good on all devices, all browsers. 
+- Sometimes issues regarding third party cookies appear for the embedded preview from spotify. 
+in the console. Not much to do about that. 
+- Preview works when pressing artwork, and the preview button. Smooth scroll on desktops for the button.
+- Share functionality works, on all devices and browsers. 
+- All links go to the correct platforms. 
+- All hover effects are working. 
 
 ### Everything: 
+- Looks good on all devices, all browsers. 
+- Sometimes issues regarding third party cookies appear for the embedded preview from spotify. 
+in the console. Not much to do about that. 
+- Preview works when pressing artwork, and the preview button. Smooth scroll on desktops for the button.
+- Share functionality works, on all devices and browsers. 
+- All links go to the correct platforms. 
+- All hover effects are working. 
+
+### Footer:
+- Works and looks good on all devices. 
+- Works on all browsers. 
+- All links are correct.
+- Works on all pages. 
+- All hover effects are working. 
 
 
-### Other:
-
- 
- 
-
-
-### Devices:
-
+### Physical Test Devices:
 * iPhone 5 SE 
 * iPhone 6 
 * iPhone 7 
 * iPhone X 
 * Samsung Galaxy 9 
-* Macbook Pro 
+* Macbook Pro 13
 * iPad 
 
-Browsers:
+### Chrome Devtools Test Devices:
+* All iPhones
+* Samsung Galaxy s5
+* Moto G4
+* Pixel 2 and 2XL
+* Surface Duo 
+* Ipad & Ipad Pro
+* Responsive mode
 
+### Test Browsers:
 * Chrome
 * Safari 
 * Firefox 
@@ -199,7 +263,11 @@ Browsers:
 
 
 ## Known issues: 
-
+- Does not adapt well to Galaxy Fold. 
+- Landscape mode is not perfect on iPhones 7.
+- Third party warnings regarding embedded content in console. 
+- Fonticon missing. 
+- Contrast warnings for darktheme font color in lighthouse.  
 
 ## Tested by other people: 
 
@@ -219,8 +287,7 @@ The link was made using the repository name as a part of it.
 
 # Credits
 * Ian Lunn for great hover effects: https://github.com/IanLunn/Hover 
-* 
-* 
-* 
-
-* 
+* Sergiu Șandor for the tilt.js effects, original idea: https://github.com/gijsroge/tilt.js
+* Stackoverflow community. 
+* Julio Codes for inspiration on gradient animation: https://www.youtube.com/watch?v=fBRzD6dwJfw 
+* Code Institute for the start template with presets and plugins in Gitpod. 
