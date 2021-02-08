@@ -144,8 +144,7 @@ With special font active for extra futuristic look and feeling.
 ## Free/Everything:
 Individual song page. Instead of the standard way of having streaming platforms
 lined up, we give the user a more futuristic feeling where they appear as apps. 
-Like they would on the users phone. Share functionality added here with a little for being able to
-save the URL, send or post on diffrent Social Medias, or forward the song through an email.
+Like they would on the users phone. Share functionality added here with a little animation. User can save the URL, send or post on diffrent Social Medias, or forward the song through an email.
 Cool animation when hovering the album cover, clicking on it will activate a drop down 
 with a preview of the song. Same goes for pressing the preview button.
 
@@ -182,7 +181,8 @@ links to streming services, add new services, album covers, titles and it will a
 - Looks good on all devices, and browsers.
 - Callout button works perfectly.
 - Latest releases has correct links.
-- Signing up for fanmails sends email to correct emailaddress. Button changes from Submit to Sent. 
+- Signing up for fanmails sends email to correct emailaddress. Button changes from Submit to Sent. Pressing terms collapses into the terms, and the button changes to "Close terms".
+The terms do look bigger than intended for one second when collapsing, don't know what causes this. 
 - Google thinks the font color for darkmode does not have the best contrast. Changing this would alter the design. Will try slightly brighter color.
 - All CSS and jQuery Hover effects work.
 - Hero section in landscape mode is not good. 
@@ -194,8 +194,8 @@ links to streming services, add new services, album covers, titles and it will a
 
 ### Contact: 
 - Works fine. 
-- Might need a popup or animation to let user know it was successfully sent. 
-- Erase input fields when sent. 
+- Need a popup or animation to let user know it was successfully sent. 
+- Erases input fields when sent.
 
 
 ### Free: 
