@@ -11,10 +11,14 @@ function sendMail(contactForm) {
     .then(
         function(response) {
             console.log("SUCCESS", response);
+                // Message user if successful
+            alert("Your message has been sent!");
             $("#contactForm")[0].reset();
         },
         function(error) {
             console.log("FAILED", error);
+            // Message user if failed
+            alert("Sorry, not working at the moment!");
         }
     );
     return false;  // To block from loading a new page
