@@ -13,7 +13,6 @@ html {
   font-weight: 400;
   font-style: normal;
   -webkit-text-size-adjust: -120%;
-  font-display: swap;
 }
 
 
@@ -72,7 +71,7 @@ nav {
 }
 
 .menu-button:hover {
-  background: linear-gradient(90deg,#ff8a00,#e52e71);
+  background: linear-gradient(to right,#ff8a00,#e52e71);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -81,7 +80,6 @@ nav {
 }
 
 .menu-button {
-  padding: auto;
   width: 130px;
   height: 45px;
   text-align: center;
@@ -802,8 +800,8 @@ li.fades{
 }
 
 .collapse {
-  font-size: 12px;
-  font-weight: 300px;
+  font-size: 15px;
+  font-weight: 400;
   color: gray;
 }
 
@@ -833,7 +831,7 @@ li.fades{
 
 .footer-buttons-box {
   margin-top: 20px;
-  width: 100;
+  width: 100%;
 }
 
 .footer-buttons-box a {
@@ -1211,10 +1209,6 @@ li.fades{
 
 .song-artwork:hover .preview-box {
   left: auto;
-}
-
-.preview-text:hover {
-  display: hidden;
 }
 
  .song-panel-whole .song-artwork:hover {
