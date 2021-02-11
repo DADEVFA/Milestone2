@@ -248,14 +248,41 @@ in the console. Not much to do about that.
 * Firefox 
 * Opera 
 
+## Lighthouse Results: 
+
+### Home:
+<img src="./assets/images/readme/lighthouse-home.png"  width="400" />
+
+### Music:
+<img src="./assets/images/readme/lighthouse-music.png"  width="400" />
+
+### Free:
+<img src="./assets/images/readme/lighthouse-free.png"  width="400" />
+
+### Everything:
+<img src="./assets/images/readme/lighthouse-everything.png"  width="400" />
+
+### Contact:
+<img src="./assets/images/readme/lighthouse-contact.png"  width="400" />
+
 
 
 ### HTML Validation Results: 
-<a href=""></a>
+
+<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdadevfa.github.io%2FMilestone2%2Findex.html#l906c1">Home - Pass</a>
+
+<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdadevfa.github.io%2FMilestone2%2Fmusic.html#l906c1">Music - Pass</a>
+
+<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdadevfa.github.io%2FMilestone2%2Ffree.html#l906c1">Free - Pass</a>
+
+<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdadevfa.github.io%2FMilestone2%2Feverything.html#l906c1">Everything - Pass</a>
+
+<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdadevfa.github.io%2FMilestone2%2Fcontact.html#l906c1">Contact - Pass</a>
 
 
 
-### CSS Validation Results: 
+
+### CSS Validation Results:
 <a href=""></a>
 
 ### Javascript Validation Results: 
@@ -267,7 +294,8 @@ in the console. Not much to do about that.
 - Landscape mode is not perfect on iPhones 7.
 - Third party warnings regarding embedded content in console. 
 - Fonticon missing. 
-- Contrast warnings for darktheme font color in lighthouse.  
+- "Go back to music" button, makes content around it move on hover.
+
 
 ## Tested by other people: 
 
@@ -291,3 +319,4 @@ The link was made using the repository name as a part of it.
 * Stackoverflow community. 
 * Julio Codes for inspiration on gradient animation: https://www.youtube.com/watch?v=fBRzD6dwJfw 
 * Code Institute for the start template with presets and plugins in Gitpod. 
+* Toolur for compressing images.  
