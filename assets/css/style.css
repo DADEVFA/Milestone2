@@ -268,7 +268,7 @@ li.fades{
   width: 100%;
   max-width: 550px;
   margin: 30px 30px 60px 30px;
-  box-shadow: 5px 5px 9px #310009; 
+  box-shadow: 5px 4px 6px rgba(17, 1, 1, 0.774)
 }
 
 /*---------------------------------- Individual Song Pages */
@@ -424,7 +424,7 @@ li.fades{
 .song-artwork img {
   height: auto;
   width: 100%;
-  box-shadow: 5px 5px 9px #310009;
+  box-shadow: 5px 4px 6px rgba(17, 1, 1, 0.774);
   position: relative; 
   transform-style: preserve-3d;
 }
@@ -433,7 +433,7 @@ li.fades{
   width: calc(100% - 30px);
   height: 85px;
   border: transparent;
-  box-shadow: 5px 5px 9px #310009;
+  box-shadow: 5px 4px 6px rgba(17, 1, 1, 0.774);
   transform-style: preserve-3d;
   color: white;
   position: relative;
@@ -515,7 +515,7 @@ color: #D81B60;
   height: auto;
   width: 100%;
   max-width: 500px;
-  box-shadow: 5px 5px 9px #310009; 
+  box-shadow: 5px 4px 6px rgba(17, 1, 1, 0.774); 
   margin: 20px 0 20px 0;
 }
 
@@ -949,7 +949,7 @@ color: #D81B60;
   line-height: 50%;
 }
 
-#mail-btn i{
+#mail-button {
  color: #ff8a00;
 }
 
