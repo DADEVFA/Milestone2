@@ -18,6 +18,9 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;600;700;800;900&display=swap" 
         rel="stylesheet"/>
     <link 
+        rel="stylesheet" 
+        href="https://use.typekit.net/fxb1rpu.css">    
+    <link 
         id="switchcss"
         rel="stylesheet" 
         href="./assets/css/darkstyle.css" 
@@ -117,13 +120,14 @@
             </p>
 
                 <form name="fanForm" id="fanForm" class="inline" onsubmit="return sendMail(fanForm);">
-                            <input
+                    <input
                                 type="email"
                                 class="fan-form form-control email-input"
                                 id="E-Mail"
                                 name="email"
                                 placeholder="Your e-mail"
                                 required
+                                aria-label="Your e-mail"
                             />
                 <button 
                     type="submit" 
@@ -155,10 +159,11 @@
                 class="hvr-float-shadow" 
                 href="https://www.instagram.com/thisismetta" 
                 target="_blank"
+                rel="noopener"
             >
                     <img
                         src="./assets/images/logos/instagram.jpg"
-                        alt="Instagram - Metta profile"
+                        alt="METTA on Instagram"
                         height="40"
                         width="40"
                         class="footer-socials"
@@ -168,6 +173,7 @@
                 class="hvr-float-shadow" 
                 href="https://www.facebook.com/thisismetta" 
                 target="_blank"
+                rel="noopener"
             >
                     <img
                         src="./assets/images/logos/facebook.jpg"
@@ -181,6 +187,7 @@
                 class="hvr-float-shadow" 
                 href="https://soundcloud.com/thisismetta" 
                 target="_blank"
+                rel="noopener"
             >
                     <img
                         src="./assets/images/logos/soundcloud.jpg"
@@ -194,6 +201,7 @@
                 class="hvr-float-shadow" 
                 href="https://twitter.com/metta" 
                 target="_blank"
+                rel="noopener"
             >
                     <img
                         src="./assets/images/logos/twitter.jpg"
@@ -207,6 +215,7 @@
                 class="hvr-float-shadow" 
                 href="https://www.youtube.com/channel/UCeXsePAwk8wLZ82BpMAPMjw" 
                 target="_blank"
+                rel="noopener"
             >
                     <img
                         src="./assets/images/logos/youtube.jpg"
@@ -236,27 +245,19 @@
 
 <!-- /.Footer-->
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-        <script src="./assets/js/fanForm.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/fanForm.js"></script>
     <script type="text/javascript" src="./assets/js/vanilla-tilt.js"></script>
     <script type="text/javascript">
-	VanillaTilt.init(document.querySelector(".albumcover"), {
-	});
-	VanillaTilt.init(document.querySelectorAll(".albumcover"));
+            VanillaTilt.init(document.querySelectorAll(".albumcover"));
     </script>
     <script src="./assets/js/navigation.js"></script>
-    <script 
-        src="./assets/js/main.js"
-    ></script>
 
 </body>
 </html>
