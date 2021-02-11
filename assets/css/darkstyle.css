@@ -1,5 +1,5 @@
 body {
-  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-family: "Raleway", sans-serif;
   background: rgb(3, 3, 3, 0.9);
   -webkit-text-size-adjust: none;
 }
@@ -13,6 +13,7 @@ html {
   font-weight: 400;
   font-style: normal;
   -webkit-text-size-adjust: -120%;
+  font-display: swap;
 }
 
 
@@ -262,7 +263,7 @@ li.fades{
 }
 
 .index-songs-header {
-  color: rgb(150, 60, 170);
+  color: rgb(233, 96, 233);
   margin: 70px 0 40px 0;
   font-weight:400;
 }
@@ -304,7 +305,7 @@ li.fades{
 }
 
 .songs-header {
-  color: rgb(150, 60, 170);
+  color: rgb(197, 62, 197);
   font-weight:400;
   font-size: 30px;
   text-align: left;
@@ -328,7 +329,7 @@ li.fades{
   width: 48%;
   background: transparent;
   border: 0.2px solid rgba(150, 60, 170, 0.3);
-  color: #963CAA;
+  color: rgb(233, 96, 233);
   padding: 0.8em 1em;
   font-size: 11px;
   letter-spacing: 0.1px;
@@ -356,7 +357,7 @@ li.fades{
   width: 50%;
   background: transparent;
   border: 0.1px solid rgba(192, 89, 127, 0.2);
-  color: #963CAA;
+  color: rgb(233, 96, 233);
   padding: 0.9em 0.2em 0.8em 0.2em;
   font-size: 11px;
   letter-spacing: 0.2px;
@@ -390,7 +391,7 @@ li.fades{
 }
 
 .streaming-services-box p {
-  color: #963CAA;
+  color: rgb(233, 96, 233);
   font-family: "Raleway";
 }
 
@@ -450,7 +451,7 @@ li.fades{
 }
 
 .preview-button a{
-  color: #963CAA;
+  color: rgb(233, 96, 233);
 }
 
 .metta-cd-animation {
@@ -527,7 +528,7 @@ li.fades{
 }
 
 .songs-header-library {
-  color: rgb(150, 60, 170);
+  color: rgb(233, 96, 233);;
   font-weight:400;
   font-size: 22px;
   text-align: left;
@@ -536,7 +537,7 @@ li.fades{
 }
 
 .music-library-header {
-  color: #963CAA;
+  color: rgb(233, 96, 233);
   margin: 70px 0 40px 0;
   font-weight:400;
 }
@@ -740,7 +741,7 @@ li.fades{
 
 .email-submit-box {
   margin: 40px 80px;
-  color: #963CAA;
+  color: rgb(233, 96, 233);
   border: 0.4px solid rgba(150, 60, 170, 0.3);
   padding: 20px;
   font-size: 20px;
@@ -750,13 +751,13 @@ li.fades{
 }
 
 .email-input {
-  color: #963CAA;
+  color: rgb(233, 96, 233);
   border-width: 0 0 1px 0;
 }
 
 .form-control {
   background: transparent;
-  border-bottom: 0.8px solid #963CAA;
+  border-bottom: 0.8px solid rgb(233, 96, 233);
   padding: 0;
 }
 
@@ -764,7 +765,7 @@ li.fades{
   background: transparent;
   letter-spacing: 1px;
   border: 0.2px solid rgba(150, 60, 170, 0.3);
-  color: #963CAA;
+  color: rgb(233, 96, 233);
   padding: 8px 30px;
   font-size: 12px;
   font-weight: 500;
@@ -773,26 +774,26 @@ li.fades{
 }
 
 .submit-button:hover {
-  color: #963CAA;
+  color: rgb(233, 96, 233);
 }
 
 .sent-button {
   background: transparent;
   letter-spacing: 1px;
   border: 0.2px solid rgba(150, 60, 170, 0.3);
-  color: #963CAA;
+  color: rgb(233, 96, 233);
   padding: 8px 37px;
   font-size: 12px;
   font-weight: 500;
   margin: 0 18px 0 23px;
-  box-shadow: 2px 2px 4px #963CAA; 
+  box-shadow: 2px 2px 4px rgb(233, 96, 233);
   cursor: pointer;
 }
 
 .terms-button {
   margin-top: 10px;
   letter-spacing: 1px;
-  color: #963CAA;
+  color: rgb(233, 96, 233);
   padding: 8px 0;
   font-size: 14px;
   border: none;
@@ -816,7 +817,7 @@ li.fades{
   text-align: center;
   align-content: center;
   font-size: 13px;
-  color: rgb(150, 60, 170);
+  color: rgb(233, 96, 233);;
   position: relative;
   box-shadow: 2px -12px 8px -15px gray; 
 }
@@ -845,7 +846,7 @@ li.fades{
   width: 100px;
   background: transparent;
   border: 0.3px solid rgba(150, 60, 170, 0.3);
-  color: #963CAA;
+  color: rgb(233, 96, 233);
   margin: 0 5px 0 5px;
   padding: 0.8em 1em;
   text-align: center;
@@ -979,7 +980,7 @@ li.fades{
 }
 
 .contact-header {
-  color: #963CAA;
+  color: rgb(233, 96, 233);
   margin: 40px 0 40px 0;
   font-weight: 400;
 }
@@ -988,13 +989,13 @@ li.fades{
   text-align: left;
   padding: 20px;
   background-color: rgb(134, 124, 125, 0.06);
-  color: #963CAA;
+  color: rgb(233, 96, 233);
   box-shadow: 5px 5px 9px #310018;
   margin-bottom: 80px;
 }
 
 .contact-text {
-  color: #963CAA;
+  color: rgb(233, 96, 233);
   font-size: 14px;
   margin-top: 10px;
   text-align: left;
@@ -1005,7 +1006,7 @@ li.fades{
   width: 80px;
   background: transparent;
   border: 0.3px solid rgba(150, 60, 170, 0.3);
-  color: #963CAA;
+  color: rgb(233, 96, 233);
   padding: 0.8em 1em;
   font-size: 14px;
   letter-spacing: 0.2px;
@@ -1022,7 +1023,7 @@ li.fades{
 }
 
 .inside-form {
-  border-bottom: 0.2px solid #963CAA;
+  border-bottom: 0.2px solid rgb(233, 96, 233);
   border-top: none;
   border-left: none;
   border-right: none;

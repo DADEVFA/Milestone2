@@ -1,5 +1,5 @@
 body {
-  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-family: "Raleway", sans-serif;
   -webkit-text-size-adjust: none;
 }
 
@@ -12,6 +12,7 @@ html {
   font-weight: 400;
   font-style: normal;
   -webkit-text-size-adjust: -120%;
+  font-display: swap;
 }
 
 a:hover {
@@ -809,7 +810,7 @@ color: #D81B60;
   text-align: center;
   align-content: center;
   font-size: 13px;
-  color: rgb(216, 27, 96);
+  color: #c41857;
   position: relative;
   box-shadow: 2px -12px 8px -15px gray;
 }
@@ -838,7 +839,7 @@ color: #D81B60;
   width: 100px;
   background: transparent;
   border: 0.1px solid rgba(192, 89, 127, 0.2);
-  color: #D81B60;
+  color: #c41857;
   margin: 0 5px 0 5px;
   padding: 0.8em 1em;
   text-align: center;
