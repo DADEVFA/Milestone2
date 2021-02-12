@@ -1,6 +1,6 @@
-<h1 align="center">METTA</h1>
-<h1 align="center"><img src=""/></h1>
-<h1 align="center"><img src=""/></h1>
+<h1>METTA</h1>
+<h1 align="center"><img src="./assets/images/readme/MettaMockup.jpg"/></h1>
+
 
 
  <a href="https://dadevfa.github.io/Milestone2">Live website</a>
@@ -12,7 +12,6 @@
 A modern website for an artist with themes changing depending on the time of the day.
 Focus on making the songs of the artist easy to find with a few clicks, 
 and at the same time being visually pleasing.
-
 
 
 
@@ -106,11 +105,11 @@ Bright Theme:
 Dark Theme:
 <h1 align="center"><img src="./assets/images/readme/dark.png"/></h1>
 
-### Mockups
+### Wireframes
 
 Layout, wireframes and design was made and created all in one in Adobe Xd. 
 The live site has the same design, with some improvement on some details. 
-Live site has functionality that is not visible on mockups
+The mockups on top is from the live site. The following are the wireframes/design:
 
 All:
 <h1 align="center"><img src="./assets/images/readme/allmockups.png"  width="800" /></h1>
@@ -152,7 +151,7 @@ with a preview of the song. Same goes for pressing the preview button.
 ## Overall:
 Theme changes depending what time of the day it is, but only if the user hasn't changed the theme manually in menu.
 Navigation bar is behaving just as the hero section, and the menu background does the same.
-With some nice animation added when pressing the hamburger. Pressing the DarkMode/BrightMode button
+Cool animation added when pressing the hamburger. Pressing the DarkMode/BrightMode button
 in menu, will change the background imidiately, so the user understands that the change is in place. 
 Footer contains all important social media links, with buttons, to go to top
 or to important pages. 
@@ -314,7 +313,6 @@ On Github, and on the specific repository for this page, there is a settings but
 Further down on that page is Github Pages section. 
 I selected the Master branch instead of None and saved it. Site went live.
 The link was made using the repository name as a part of it. 
-
 
 
 # Credits
