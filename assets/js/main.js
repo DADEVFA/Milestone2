@@ -18,7 +18,7 @@ menuIcon.addEventListener("click", () => {
     menuIcon.classList.toggle("changelines");
     // No Scroll in Menu function"
     let fix = document.querySelector("body");
-    fix.classList.toggle("fixed-menu")
+    fix.classList.toggle("fixed-menu");
 });
 
 
@@ -54,7 +54,7 @@ function switchStyle() {
         document.getElementById('switchcss').setAttribute('href', dayMode);
         // Menu button is ready for Dark Mode" 
         switchcss.innerHTML = "DARK MODE";
-    } if (localStorage.getItem("CSS") == null || localStorage.getItem("CSS") == " ") {
+    } if (localStorage.getItem("CSS") === null || localStorage.getItem("CSS") == " ") {
         // If User hasn't changed CSS manually, use css based on hour of day" 
         if (hour >= 6 && hour <= 20) {
             document.getElementById('switchcss').setAttribute('href', dayMode); 

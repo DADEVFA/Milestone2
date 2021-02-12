@@ -9,7 +9,7 @@ function sendMail(fanForm) {
     })
         // Change Button on submit"  
         if (btn.value == "Submit") {
-        btn.value = "Sent"
+        btn.value = "Sent";
         btn.innerHTML = "Sent";
         document.getElementById("submit-button").className = "sent-button";
     } else {
