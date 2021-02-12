@@ -175,7 +175,6 @@ links to streming services, add new services, album covers, titles and it will a
 - Works on all pages.
 - All links in menu works correctly. 
 - The Theme Switch button works. 
-- Landscape mode is not perfect, but it does fullfill it's purpose. 
 
 ### Home: 
 - Looks good on all devices, and browsers.
@@ -185,7 +184,6 @@ links to streming services, add new services, album covers, titles and it will a
 The terms do look bigger than intended for one second when collapsing, don't know what causes this. 
 - Google thinks the font color for darkmode does not have the best contrast. Changing this would alter the design. Will try slightly brighter color.
 - All CSS and jQuery Hover effects work.
-- Hero section in landscape mode is not good. 
 
 ### Music: 
 - Looks good on all devices, and all browsers. 
@@ -196,7 +194,6 @@ The terms do look bigger than intended for one second when collapsing, don't kno
 - Works fine. 
 - Need a popup or animation to let user know it was successfully sent. 
 - Erases input fields when sent.
-
 
 ### Free: 
 - Looks good on all devices, all browsers. 
@@ -297,10 +294,18 @@ Some warnings, no errors.
 
 
 ## Tested by other people: 
+"
+It's easy to find the artists music. Both through the first button on when you come on the homepage.
+But also by scrolling down under latest releases. Also through menu and at the bottom of the page.
 
+It's not crowded with content so it's easy to navigate and understand.
 
+Could listen to a little bit of both songs which is good for I have never heard anything. 
+I went to youtube and played the full song by clicking on the Youtube logo.
+I also subsribed on METTAs channel. 
 
-
+I think that the websites profiling or design matches the artists music. Very nice!
+"
 # Deployment
 
 This website was published using GitHub Pages. 
