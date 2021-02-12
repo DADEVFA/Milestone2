@@ -18,7 +18,7 @@ a:hover {
   text-decoration: none;
 }
 
-/*---------------------------------- Modified DevEdwins Animated Navigation */
+/*---------------------------------- Modified Dev Eds Animated Navigation */
 
 nav {
   background: linear-gradient(-55deg, #963caa, #ee7753, #963caa, #ef5466);
@@ -70,11 +70,11 @@ nav {
 
 .menu-button:hover {
   background: linear-gradient(90deg,#ff8a00,#e52e71);
-  background-clip: text;
+  color: transparent;
+  -moz-background-clip: text; 
+  background-clip: inherit;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
+  transition: all 0.4s ease-in-out;
 }
 
 .menu-button {
@@ -135,6 +135,10 @@ nav {
 .nav-links li:nth-child(4) {
   transition: all 0.7s ease 0.98s;
   color: white;
+}
+.nav-links li:nth-child(4):hover {
+  color: transparent;
+  transition: all 0.4s 
 }
 
 li.fades{
@@ -241,7 +245,7 @@ li.fades{
 .jumbo-button:hover {
   border: solid 0.08px black;
   color: black;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.747);
 }
 
 /*-------------------------------Latest Releases*/
@@ -337,11 +341,10 @@ li.fades{
 
 .song-buttons:hover {
   background: linear-gradient(90deg,#ff8a00,#e52e71);
-  background-clip: text;
+  color: transparent;
+  -moz-background-clip: text; 
+  background-clip: inherit;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
   text-shadow: none;
   border: hidden;
 }
@@ -441,9 +444,11 @@ li.fades{
   transition: all 0.5s ease-in-out;
 }
 
-.preview-button a{
-color: #D81B60;
+.preview-button a {
+color: inherit;
+text-decoration: none;
 }
+
 
 .metta-cd-animation {
   width: 500px;
@@ -716,7 +721,6 @@ color: #D81B60;
   transform: scale(1);
 }
 
-
 /*---------------------------------- Submit Email*/
 
 .email-submit-zone {
@@ -852,12 +856,11 @@ color: #D81B60;
 }
 
 .footer-buttons:hover {
-  background: linear-gradient(124deg,#ff8a00,#e52e71);
-  background-clip: text;
+  background: linear-gradient(90deg,#ff8a00,#e52e71);
+  color: transparent;
+  -moz-background-clip: text; 
+  background-clip: inherit;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
   text-shadow: none;
   border: hidden;
 }
@@ -1006,6 +1009,11 @@ color: #D81B60;
   position: relative;
   line-height: 1.15384615;
   cursor: pointer;
+}
+
+.send-message-button:hover {
+  border: 0.2px solid #D81B60;
+  color: #D81B60;
 }
 
 .formstyle {
@@ -1202,16 +1210,13 @@ color: #D81B60;
  .song-artwork:hover .top-img-albumcover {
   left: auto;
 }
-
  .song-artwork:hover .preview-box {
   left: auto;
 }
-
  .song-panel-whole .song-artwork:hover {
   left: auto;
  }
 }
-
 
 @media (min-height: 1000px) {
  .choose-music-service {
@@ -1228,4 +1233,3 @@ color: #D81B60;
   cursor: default;
  }
 }
-
