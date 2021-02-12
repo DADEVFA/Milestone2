@@ -283,18 +283,17 @@ in the console. Not much to do about that.
 
 
 ### CSS Validation Results:
-<a href=""></a>
+#### <a href="https://jigsaw.w3.org/css-validator/validator#css">CSS Bright - Pass</a>
+#### <a href="https://jigsaw.w3.org/css-validator/validator#css">CSS Dark - Pass</a>
 
-### Javascript Validation Results: 
-<a href=""></a>
-
+### JSHint Check: 
+Some warnings, no errors. 
 
 ## Known issues: 
 - Does not adapt well to Galaxy Fold. 
-- Landscape mode is not perfect on iPhones 7.
 - Third party warnings regarding embedded content in console. 
 - Fonticon missing. 
-- "Go back to music" button, makes content around it move on hover.
+- "Go back to music" button, makes content around it move on hover on few screens.
 
 
 ## Tested by other people: 
@@ -317,6 +316,7 @@ The link was made using the repository name as a part of it.
 * Ian Lunn for great hover effects: https://github.com/IanLunn/Hover 
 * Sergiu Șandor for the tilt.js effects, original idea: https://github.com/gijsroge/tilt.js
 * Stackoverflow community. 
+* Dev Ed for inspiration Tilt.js
 * Julio Codes for inspiration on gradient animation: https://www.youtube.com/watch?v=fBRzD6dwJfw 
 * Code Institute for the start template with presets and plugins in Gitpod. 
 * Toolur for compressing images.  
