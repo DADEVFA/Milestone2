@@ -30,14 +30,28 @@ function processFanForm(form) {
     const data = {
         "from_email": form.email.value
     }
-
     // Calling the sendMail function with the received values 
     // Using individual Email JS template:
     sendMail(data, "template_iwvv5ga")
-    $("#fanForm")[0].reset(); // Reset input field 
+
+    let btn = document.getElementById("submit-button");
+
+        // Change Button on submit"  
+    if (btn.value == "Submit") {
+        btn.value = "Sent";
+        btn.innerHTML = "Sent";
+        document.getElementById("submit-button").className = "sent-button";
+        // Change Submit button back to default after 4 seconds:  
+        setTimeout(function () {
+            btn.className = btn.className.replace("sent-button", "submit-button");
+            btn.value = "Submit";
+            btn.innerHTML = "Submit";
+        }, 4000);
+        $("#fanForm")[0].reset(); // Reset input field 
+    } else {
+        btn.value = "Submit";
+        btn.innerHTML = "Submit";
+        document.getElementById("submit-button").className = "submit-button";
+    }
     return false;  // To block from loading a new page
 }
-
-
-
-
