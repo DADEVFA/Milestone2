@@ -1,25 +1,43 @@
 
-// EmailJS function for contact page 
+/*
+EmailJS function for both: 
+1) contactForm on contact.html 
+2) fanForm on index.html
+*/
 
-function sendMail(contactForm) {
-    emailjs.send("service_vl0ozd1", "template_i8c3b8f", {
-        "from_name": contactForm.name.value,
-        "from_email": contactForm.emailaddress.value,
-        "subject": contactForm.subject.value,
-        "message": contactForm.message.value
-    })
-    .then(
-        function(response) {
-            console.log("SUCCESS", response);
-                // Message user if successful
-            alert("Your message has been sent!");
-            $("#contactForm")[0].reset();
-        },
-        function(error) {
-            console.log("FAILED", error);
-            // Message user if failed
-            alert("Sorry, not working at the moment!");
-        }
-    );
+function sendMail(data, template) {
+    emailjs.send("service_vl0ozd1", template, data);
+}
+
+// Gather the values needed from contactForm: 
+function processContactForm(form) {
+    const data = {
+        "from_name": form.name.value,
+        "from_email": form.emailaddress.value,
+        "subject": form.subject.value,
+        "message": form.message.value
+    }
+
+    // Calling the sendMail function with the received values 
+    // Using individual Email JS template:
+    sendMail(data, "template_i8c3b8f")
+    $("#contactForm")[0].reset(); // Reset form fields 
     return false;  // To block from loading a new page
 }
+
+// Gather the value needed from fanForm: 
+function processFanForm(form) {
+    const data = {
+        "from_email": form.email.value
+    }
+
+    // Calling the sendMail function with the received values 
+    // Using individual Email JS template:
+    sendMail(data, "template_iwvv5ga")
+    $("#fanForm")[0].reset(); // Reset input field 
+    return false;  // To block from loading a new page
+}
+
+
+
+
