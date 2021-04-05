@@ -162,7 +162,7 @@ or to important pages.
 - Users emailaddresses should be sent to a database, and not to an emailaddress through email.js. 
 - A follow functionality for all social medias. 
 - Build an admin dashboard for the artist or manager for them to upload new releases with all
-links to streming services, add new services, album covers, titles and it will appear thereafter. 
+links to streming services, add new services, album covers, titles and it will appear thereafter. So to make the site dynamic. 
 - Build a game on the site that matches the brand. Rockets and planets? The winner will recieve tickets to shows or products. 
 
 # Testing 
@@ -313,7 +313,7 @@ I want to find the artists music.
 I want to understand the layout and reason for the sites functions without having to focus too much.
 I want to be able hear a sample of any song before I go to another platform to stream the full song.
 ```
-1) The call to action button takes me straight to music portfolio. Even if I scrolls down, I will see ones again the latest songs released. 
+1) The call to action button takes me straight to music portfolio. Even if I scroll down, I will see ones again the latest songs released. 
 2) There is not much happening on the site, so the layout and understandment is fairly simple. 
 3) On indiviudal page for songs, I have the possibility to press preview button to get a sample of the music. 
 
@@ -338,10 +338,10 @@ I want to be able to connect with the artist.
 I would like to be able to get a notification from the artist when there is something new going on.
 I would like the esthetics of the artists website to match the artists sound and brand.
 ```
-1) Since I love the artists music alot, I will look through the whole site, so that I dont miss anything.
-and in the menu, I find a contact form, here I write: "you are really good". Connecting.
+1) Since I love the artists music alot, I will look through the whole site, so that I dont miss anything,
+and in the menu, I find the contact page, here I write: "you are really good". Connecting.
 2) On the homepage, there is a possibility to submit my email for more information, or notifications. I'm pumped. 
-3 ) I find the esthetics pleasing, unic in a way, like the artists sound.
+3) I find the esthetics pleasing, unic in a way, like the artists sound.
 
 
 # Deployment
@@ -357,18 +357,18 @@ The link was made using the repository name as a part of it.
 To fork this repository or in other words to contribute without affecting the main branch, follow the steps below.
 1. Sign in to **Github** or sign up.
 2. Press this <a href="https://github.com/dadevfa/Milestone2">GitHub Repository</a>
-4. On the right hand side of the repository page you will see options for **watch**, **star**, and **fork**. Click **Fork**.
-5. This will create a copy in your new repository which can be edited. After changes have been made you can select a **new pull request** located in the **original repository** just above the **file listing**.
+3. On the right hand side of the repository page you will see options for **watch**, **star**, and **fork**. Click **Fork**.
+4. This will create a copy in your new repository which can be edited. After changes have been made you can select a **new pull request** located in the **original repository** just above the **file listing**.
 
 ## Cloning 
 You want to clone this repository or maybe download it to a local device then follow the steps.
 1. Sign in to **Github**.
-3. Press this <a href="https://github.com/dadevfa/Milestone2">GitHub Repository</a>
-4. Look for the **"Code"** button just under the repository name.
-5. To clone the repository using **HTTPS** click the link under **"Clone with HTTPS"**.
-6. Open a terminal and change the **current working directory** to the location where you want the cloned version of the directory to be copied to.
-7. Type **"git clone"** and paste the **HTTPS** code you copied.
-8. Press **"enter"** to finish creating your clone.
+2. Press this <a href="https://github.com/dadevfa/Milestone2">GitHub Repository</a>
+3. Look for the **"Code"** button just under the repository name.
+4. To clone the repository using **HTTPS** click the link under **"Clone with HTTPS"**.
+5. Open a terminal and change the **current working directory** to the location where you want the cloned version of the directory to be copied to.
+6. Type **"git clone"** and paste the **HTTPS** code you copied.
+7. Press **"enter"** to finish creating your clone.
 
 # Credits
 * Ian Lunn for great hover effects: https://github.com/IanLunn/Hover 
