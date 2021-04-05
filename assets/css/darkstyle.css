@@ -776,15 +776,14 @@ li.fades{
 }
 
 .sent-button {
-  background: transparent;
+  background: #2bab6b;
   letter-spacing: 1px;
   border: 0.2px solid rgba(150, 60, 170, 0.3);
-  color: rgb(233, 96, 233);
+  color: white;
   padding: 8px 37px;
   font-size: 12px;
   font-weight: 500;
   margin: 0 18px 0 23px;
-  box-shadow: 2px 2px 4px rgb(233, 96, 233);
   cursor: pointer;
 }
 
@@ -1000,11 +999,27 @@ li.fades{
 }
 
 .send-message-button {
-  margin: 50px 0;
+  margin: 50px 12px;
   width: 80px;
   background: transparent;
   border: 0.3px solid rgba(150, 60, 170, 0.3);
   color: rgb(233, 96, 233);
+  padding: 0.8em 1em;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+  display: inline-block;
+  position: relative;
+  line-height: 1.15384615;
+  cursor: pointer;
+}
+
+.message-sent {
+  margin: 50px 0;
+  width: 80px;
+  background: #2bab6b;
+  border: 0.3px solid rgba(150, 60, 170, 0.3);
+  color: white;
   padding: 0.8em 1em;
   font-size: 14px;
   letter-spacing: 0.2px;

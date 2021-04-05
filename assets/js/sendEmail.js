@@ -21,9 +21,30 @@ function processContactForm(form) {
     // Calling the sendMail function with the received values 
     // Using individual Email JS template:
     sendMail(data, "template_i8c3b8f")
-    $("#contactForm")[0].reset(); // Reset form fields 
+
+    let btn = document.getElementById("send-button");
+
+    // Change Button on submit"  
+    if (btn.value == "Submit") {
+        btn.value = "Sent";
+        btn.innerHTML = "SENT";
+        btn.className = "message-sent";
+        // Change Submit button back to default after 4 seconds:  
+        setTimeout(function () {
+            btn.className = btn.className.replace("message-sent", "send-message-button");
+            btn.value = "Submit";
+            btn.innerHTML = "SEND";
+        }, 4000);
+        $("#contactForm")[0].reset(); // Reset input field 
+    } else {
+        btn.value = "Submit";
+        btn.innerHTML = "SEND";
+        document.getElementById("send-button").className = "send-message-button";
+    }
     return false;  // To block from loading a new page
 }
+
+
 
 // Gather the value needed from fanForm: 
 function processFanForm(form) {
@@ -36,11 +57,11 @@ function processFanForm(form) {
 
     let btn = document.getElementById("submit-button");
 
-        // Change Button on submit"  
+    // Change Button on submit"  
     if (btn.value == "Submit") {
         btn.value = "Sent";
         btn.innerHTML = "Sent";
-        document.getElementById("submit-button").className = "sent-button";
+        btn.className = "sent-button";
         // Change Submit button back to default after 4 seconds:  
         setTimeout(function () {
             btn.className = btn.className.replace("sent-button", "submit-button");

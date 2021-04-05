@@ -767,15 +767,14 @@ text-decoration: none;
 }
 
 .sent-button {
-  background: transparent;
+  background: #2bab6b;;
   letter-spacing: 1px;
   border: 0.1px solid rgb(216, 27, 96, 0.4 );
-  color: #D81B60;
+  color: white;
   padding: 8px 37px;
   font-size: 12px;
   font-weight: 500;
   margin: 0 18px 0 23px;
-  box-shadow: 1px 3px 3px #D81B60; 
   cursor: pointer;
 }
 
@@ -996,13 +995,29 @@ text-decoration: none;
 }
 
 .send-message-button {
-  margin: 50px 10px;
+  margin: 50px 12px;
   width: 80px;
   background: transparent;
   border: 0.3px solid rgba(192, 89, 127, 0.6);
   color: #D81B60;
   padding: 0.8em 1em;
   font-size: 13px;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+  display: inline-block;
+  position: relative;
+  line-height: 1.15384615;
+  cursor: pointer;
+}
+
+.message-sent {
+  margin: 50px 12px;
+  width: 80px;
+  background: #2bab6b;
+  border: 0.3px solid rgba(150, 60, 170, 0.3);
+  color: white;
+  padding: 0.8em 1em;
+  font-size: 14px;
   letter-spacing: 0.2px;
   font-weight: 600;
   display: inline-block;
