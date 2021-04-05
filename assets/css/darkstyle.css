@@ -434,17 +434,16 @@ li.fades{
 }
 
 .preview-box {
-  width: calc(100% - 30px);
+  width: 96%;
   height: 85px;
-  border: transparent;
-  box-shadow: 5px 5px 9px #310009;
+  border: none;
+  box-shadow: 4px 4px 6px #310018;
   transform-style: preserve-3d;
-  color: white;
+  color: transparent;
   position: relative;
   cursor: pointer;
-  top: 0;
-  left: 0;
   transition: all 0.5s ease-in-out;
+  margin: 25px 10px 0 10px;
 }
 
 .preview-button a {
@@ -1169,6 +1168,9 @@ li.fades{
  }
  .music-library {
   margin: 10px 10px 25px 10px;
+ }
+ .preview-box {
+  margin-top: 10px;
  }
 }
 

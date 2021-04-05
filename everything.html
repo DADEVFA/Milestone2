@@ -91,63 +91,59 @@
                             </div>
                         </div>
                         </div>
-                        <div class="collapse" id="play-button">
-                            <iframe 
-                                    id="preview-box"
-                                    class="preview-box"
-                                    src="https://open.spotify.com/embed/track/0480jjwGjY6pNZgon6Xuuj" 
-                                    width="300" 
-                                    height="380" 
-                                    allow="encrypted-media">
-                            </iframe>
-                        </div>
                     </div>
                 <div class="song-panel-whole specialfont">
-                        <div class="col-4 col-12">
-                                <div class="song-panel-top">
-                                    <div class="song-panel-top-left">
-                                        <h2 class="songs-header">Everything <br><span class="track-artists specialfont">METTA</span></h2>
+                    <div class="col-4 col-12">
+                        <div class="song-panel-top">
+                            <div class="song-panel-top-left">
+                                <h2 class="songs-header">Everything <br><span class="track-artists specialfont">METTA</span></h2>
+                            </div>
+                            <div class="song-panel-top-right">
+                                <div class="song-buttons preview-button hvr-outline-in" data-toggle="collapse"
+                                    data-target="#play-button">
+                                    PREVIEW
+                                </div>
+                                <div class="share-menu">
+                                    <div class="song-buttons share-button hvr-outline-in" onclick="toggleShareMenu()">
+                                        SHARE
                                     </div>
-                                    <div class="song-panel-top-right">
-                                        <div class="song-buttons preview-button hvr-outline-in"
-                                             data-toggle="collapse" 
-                                             data-target="#play-button">
-                                            <a href="#preview-box">
-                                                PREVIEW
-                                            </a>
-                                        </div>
-                                    <div class="share-menu">  
-                                            <div class="song-buttons share-button hvr-outline-in" onclick="toggleShareMenu()">
-                                                SHARE
-                                            </div>
-                                        <div id="fb" class="social-btn hvr-float-shadow">
+                                    <div id="fb" class="social-btn hvr-float-shadow">
                                         <i class="fab fa-facebook"></i>
-                                        </div>
-                                        <div id="tw" class="social-btn hvr-float-shadow">
-                                            <i class="fab fa-twitter"></i>
-                                        </div>
-                                        <div class="social-btn hvr-float-shadow">
-                                            <a 
-                                                id="mail-button" 
-                                                href="mailto:?subject=Listen%20to%20this%20song%20by%20METTA!&amp;body=Everything%20-%20METTA:%20www.mettaofficial.com/everything">
-                                                <i class="far fa-envelope mail-button"></i>
-                                            </a>
-                                        </div>
-                                        <div id="wts" class="social-btn hvr-float-shadow">
-                                            <i class="fab fa-whatsapp"></i>
-                                        </div>
-                                        <div class="social-btn hvr-float-shadow">
-                                            <i onclick="urlShare();" class="fas fa-link"></i>
-                                        </div>
-                                        </div>
                                     </div>
+                                    <div id="tw" class="social-btn hvr-float-shadow">
+                                        <i class="fab fa-twitter"></i>
+                                    </div>
+                                    <div class="social-btn hvr-float-shadow">
+                                        <a id="mail-button"
+                                            href="mailto:?subject=Listen%20to%20this%20song%20by%20METTA!&amp;body=Everything%20-%20METTA:%20www.mettaofficial.com/everything">
+                                            <i class="far fa-envelope mail-button"></i>
+                                        </a>
+                                    </div>
+                                    <div id="wts" class="social-btn hvr-float-shadow">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </div>
+                                    <div class="social-btn hvr-float-shadow">
+                                        <i onclick="urlShare();" class="fas fa-link"></i>
                                     </div>
                                 </div>
-                                <div class="music-services-top-area" >
-                                        <div class="choose-music-service">
-                                            CHOOSE MUSIC SERVICE:
-                                        </div>
-                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse" id="play-button">
+                        <iframe 
+                            id="preview-box" 
+                            class="preview-box" 
+                            src="https://open.spotify.com/embed/track/0480jjwGjY6pNZgon6Xuuj"
+                            width="300" 
+                            height="380" 
+                            allow="encrypted-media">
+                        </iframe>
+                    </div>
+                    <div class="music-services-top-area">
+                        <div class="choose-music-service">
+                            CHOOSE MUSIC SERVICE:
+                        </div>
+                    </div>
                                 
 <!-- Streaming Services -->
 
