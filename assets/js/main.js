@@ -57,7 +57,7 @@ function switchStyle() {
     } if (localStorage.getItem("CSS") === null || localStorage.getItem("CSS") == " ") {
         // If User hasn't changed CSS manually, use css based on hour of day" 
         if (hour >= 6 && hour <= 20) {
-            document.getElementById('switchcss').setAttribute('href', dayMode); 
+            document.getElementById('switchcss').setAttribute('href', dayMode);
         } else if (hour > 20 && hour < 5) {
             document.getElementById('switchcss').setAttribute('href', nightMode);
         }
@@ -67,15 +67,17 @@ function switchStyle() {
 //Override CSS with theme switcher" 
 function btnSwitch() {
 
-    //If CSS changes to Dark MODE set button to Bright MODE" 
+    //If CSS style currently is on Dark MODE make button ready for Bright MODE" 
     if (switchcss.innerHTML == "DARK MODE") {
         switchcss.innerHTML = "BRIGHT MODE",
             document.getElementById('switchcss').setAttribute('href', nightMode),
+            //store current CSS style in DOM:
             localStorage.setItem("CSS", "DARK");
-
+        //If CSS style currently is on Bright MODE make button ready for Dark MODE"    
     } else if (switchcss.innerHTML == "BRIGHT MODE") {
         switchcss.innerHTML = "DARK MODE",
             document.getElementById('switchcss').setAttribute('href', dayMode),
+            //store current CSS style in DOM:
             localStorage.setItem("CSS", "BRIGHT");
     }
 }
