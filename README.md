@@ -49,6 +49,7 @@ to music streaming services where their songs or albums are availabe.
 * Bootstrap v4.1.3 - For responsive layout & collapse functions.
 * jQuery - Used for navigation bar.
 * Font Awesome - Complements the design.  
+* EmailJS API - For contact & fanforms.
 
 
 # UX
@@ -152,7 +153,7 @@ with a preview of the song. Same goes for pressing the preview button.
 Theme changes depending what time of the day it is, but only if the user hasn't changed the theme manually in menu.
 Navigation bar is behaving just as the hero section, and the menu background does the same.
 Cool animation added when pressing the hamburger. Pressing the DarkMode/BrightMode button
-in menu, will change the background imidiately, so the user understands that the change is in place. 
+in menu, will change the background immediately, so the user understands that the change is in place. 
 Footer contains all important social media links, with buttons, to go to top
 or to important pages. 
 
@@ -285,12 +286,10 @@ in the console. Not much to do about that.
 ### JSHint Check: 
 Some warnings, no errors. 
 
-## Known issues: 
-- Does not adapt well to Galaxy Fold. 
+## Bugs (Known Issues): 
+- Does not adapt well to Galaxy Fold.
 - Third party warnings regarding embedded content in console. 
-- Fonticon missing. 
 - "Go back to music" button, makes content around it move on hover on few screens.
-
 
 ## Tested by other people: 
 "
@@ -305,15 +304,71 @@ I also subsribed on METTAs channel.
 
 I think that the websites profiling or design matches the artists music. Very nice!
 "
-# Deployment
 
+# User Story Testing
+
+### 1. As a new visitor who comes straight from any social media profile of the artist and has not heard any music yet:
+```
+I want to find the artists music.
+I want to understand the layout and reason for the sites functions without having to focus too much.
+I want to be able hear a sample of any song before I go to another platform to stream the full song.
+```
+1) The call to action button takes me straight to music portfolio. Even if I scrolls down, I will see ones again the latest songs released. 
+2) There is not much happening on the site, so the layout and understandment is fairly simple. 
+3) On indiviudal page for songs, I have the possibility to press preview button to get a sample of the music. 
+
+### 2. As a visitor who comes from an ad campaign for a specific song:
+
+```
+I want to be able to see that I landed on the right song.
+I want to understand the layout and reason for the sites functions without having to focus too much.
+I want to be able to find my streaming platform, to play the song from there.
+```
+
+1) I immediately see the same artwork and song title that I was presented to earlier. What a relief. 
+2) The layout is not like the ordinary websites or link-pages one might be 
+used to, but the layout is pretty straight forward. 
+3) I instantly notice apps that is associated with music, and once I press them, 
+I can instantly start to listen from there. 
+
+### 3. As a visitor who really likes the artist:
+
+```
+I want to be able to connect with the artist.
+I would like to be able to get a notification from the artist when there is something new going on.
+I would like the esthetics of the artists website to match the artists sound and brand.
+```
+1) Since I love the artists music alot, I will look through the whole site, so that I dont miss anything.
+and in the menu, I find a contact form, here I write: "you are really good". Connecting.
+2) On the homepage, there is a possibility to submit my email for more information, or notifications. I'm pumped. 
+3 ) I find the esthetics pleasing, unic in a way, like the artists sound.
+
+
+# Deployment
+## Publishing
 This website was published using GitHub Pages. 
 
-On Github, and on the specific repository for this page, there is a settings button.
-Further down on that page is Github Pages section. 
-I selected the Master branch instead of None and saved it. Site went live.
-The link was made using the repository name as a part of it. 
+On Github and on my account, and on the specific repository for this page, there is a settings button. 
+Further down on the settings page is Github Pages section. 
+After I selected the **Master branch** instead of **None** and saved it, tite went live. 
+The link was made using the repository name as a part of it.
 
+## Forking
+To fork this repository or in other words to contribute without affecting the main branch, follow the steps below.
+1. Sign in to **Github** or sign up.
+2. Press this <a href="https://github.com/dadevfa/Milestone2">GitHub Repository</a>
+4. On the right hand side of the repository page you will see options for **watch**, **star**, and **fork**. Click **Fork**.
+5. This will create a copy in your new repository which can be edited. After changes have been made you can select a **new pull request** located in the **original repository** just above the **file listing**.
+
+## Cloning 
+You want to clone this repository or maybe download it to a local device then follow the steps.
+1. Sign in to **Github**.
+3. Press this <a href="https://github.com/dadevfa/Milestone2">GitHub Repository</a>
+4. Look for the **"Code"** button just under the repository name.
+5. To clone the repository using **HTTPS** click the link under **"Clone with HTTPS"**.
+6. Open a terminal and change the **current working directory** to the location where you want the cloned version of the directory to be copied to.
+7. Type **"git clone"** and paste the **HTTPS** code you copied.
+8. Press **"enter"** to finish creating your clone.
 
 # Credits
 * Ian Lunn for great hover effects: https://github.com/IanLunn/Hover 
@@ -323,3 +378,4 @@ The link was made using the repository name as a part of it.
 * Julio Codes for inspiration on gradient animation: https://www.youtube.com/watch?v=fBRzD6dwJfw 
 * Code Institute for the start template with presets and plugins in Gitpod. 
 * Toolur for compressing images.  
+* My mentor!
