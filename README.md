@@ -313,6 +313,9 @@ I want to find the artists music.
 I want to understand the layout and reason for the sites functions without having to focus too much.
 I want to be able hear a sample of any song before I go to another platform to stream the full song.
 ```
+### Result: 
+1<h1 align="center"><img src="./assets/images/readme/home.png"/></h1>
+2-3<h1 align="center"><img src="./assets/images/readme/preview.png"/></h1>
 1) The call to action button takes me straight to music portfolio. Even if I scroll down, I will see ones again the latest songs released. 
 2) There is not much happening on the site, so the layout and understandment is fairly simple. 
 3) On indiviudal page for songs, I have the possibility to press preview button to get a sample of the music. 
@@ -324,6 +327,8 @@ I want to be able to see that I landed on the right song.
 I want to understand the layout and reason for the sites functions without having to focus too much.
 I want to be able to find my streaming platform, to play the song from there.
 ```
+### Result: 
+<h1 align="center"><img src="./assets/images/readme/everything.png"/></h1>
 
 1) I immediately see the same artwork and song title that I was presented to earlier. What a relief. 
 2) The layout is not like the ordinary websites or link-pages one might be 
@@ -338,6 +343,11 @@ I want to be able to connect with the artist.
 I would like to be able to get a notification from the artist when there is something new going on.
 I would like the esthetics of the artists website to match the artists sound and brand.
 ```
+### Result: 
+1<h1 align="center"><img src="./assets/images/readme/contact.png"/></h1>
+2<h1 align="center"><img src="./assets/images/readme/fanform.png"/></h1>
+3<h1 align="center"><img src="./assets/images/readme/menu.png"/></h1>
+
 1) Since I love the artists music alot, I will look through the whole site, so that I dont miss anything,
 and in the menu, I find the contact page, here I write: "you are really good". Connecting.
 2) On the homepage, there is a possibility to submit my email for more information, or notifications. I'm pumped. 
